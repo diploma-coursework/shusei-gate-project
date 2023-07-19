@@ -8,9 +8,24 @@
         <link rel="stylesheet" href="./css/global.css" />
     </head>
     <body>
+        <!--------------------------------- 
+            container to render components
+         --------------------------------->
         <div id="root"></div>
 
+        <!-------------------------------------
+            create custom element <route-to />
+         ------------------------------------->
         <script type="module" src="./lib/route-to.js"></script>
+
+        <!---------------------------------------------------------
+            route handler for single page application (SPA) format
+         --------------------------------------------------------->
         <script type="module" src="./lib/router.js"></script>
+
+        <!----------------------
+            connect to firebase
+         ---------------------->
+        <script type="module" src="./lib/firebaseConnection.js"></script>
     </body>
 </html>

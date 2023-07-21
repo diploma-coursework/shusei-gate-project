@@ -6,7 +6,7 @@
     align-items: center;
 
     /* backdrop */
-    background: url(/assets/alt_wallpaper.jpg);
+    background: url(/assets/hosizora.jpg);
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -21,7 +21,7 @@
     border-radius: 0.5em;
 
     /* acrylic effect */
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(24, 33, 51, 0.5);
     backdrop-filter: blur(10px);
 
     /* window shadow effect (h-offset, v-offset, blur, color) */

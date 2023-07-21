@@ -1,9 +1,8 @@
 @import url(window.css);
+@import url(font.css);
 
 /* TODO: font */
-
 /* TODO: set colors */
-
 body {
     margin: 0;
 }

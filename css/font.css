@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/lib/fonts/Quicksand-Medium.ttf'), url('/lib/fonts/Quicksand-Bold.ttf'),
+        url('/lib/fonts/Quicksand-Light.ttf'), url('/lib/fonts/Quicksand-SemiBold.ttf');
+}
+
+#root {
+    font-family: 'Quicksand', sans-serif;
+}

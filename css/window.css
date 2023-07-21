@@ -1,0 +1,29 @@
+#root-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* backdrop */
+    background: url(/assets/alt_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#root-wrapper #root {
+    width: 1300px;
+    height: 768px;
+    padding: 1em;
+    z-index: 1;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+
+    /* acrylic effect */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+
+    /* window shadow effect (h-offset, v-offset, blur, color) */
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+}

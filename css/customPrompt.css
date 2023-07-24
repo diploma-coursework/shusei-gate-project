@@ -1,0 +1,72 @@
+/* custom prompt styles */
+#prompt-background {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prompt-background #prompt-body {
+    background: rgba(26, 26, 26, 0.5);
+    max-width: 40em;
+    border-radius: 0.5em;
+    overflow-y: hidden;
+    border: 1px solid gray;
+}
+
+#prompt-background #prompt-body .seperator {
+    width: 98%;
+    height: 1px;
+    background: gray;
+    margin: 0 auto;
+}
+
+#prompt-background #prompt-body .title {
+    margin: 0;
+    background: #0f0e12;
+    color: white;
+    padding: 0.1em 0.8em;
+    font-size: 1.8em;
+}
+
+#prompt-background #prompt-body .content-wrapper {
+    padding: 0.1em 2em 0.4em;
+    position: relative;
+    height: 80%;
+}
+
+#prompt-background #prompt-body .content-wrapper .description {
+    margin-bottom: 3.5em;
+    font-size: 1.1em;
+}
+
+#prompt-background #prompt-body .content-wrapper .btn-wrapper {
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 2em;
+    display: flex;
+    justify-content: right;
+    gap: 1em;
+}
+
+#prompt-background #prompt-body .content-wrapper .btn-wrapper button {
+    font-size: 1em;
+    padding: 0.3em 0.6em;
+    border-radius: 0.2em;
+    background: var(--light-gray);
+    border: 1px solid black;
+    font-weight: bold;
+    color: var(--purple);
+    backdrop-filter: saturate(2);
+    /* transition: backdrop-filter 0.2s; */
+}
+
+#prompt-background #prompt-body .content-wrapper .btn-wrapper button:hover {
+}

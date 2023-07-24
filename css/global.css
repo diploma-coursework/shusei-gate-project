@@ -1,6 +1,7 @@
 @import url(window.css);
 @import url(font.css);
 @import url(color.css);
+@import url(customPrompt.css);
 
 body {
     margin: 0;

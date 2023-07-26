@@ -13,8 +13,8 @@
 }
 
 #root-wrapper #root {
-    width: 1300px;
-    height: 768px;
+    width: var(--window-width);
+    height: var(--window-height);
     padding: 1em;
     z-index: 1;
     border: 1px solid gray;
@@ -26,4 +26,7 @@
 
     /* window shadow effect (h-offset, v-offset, blur, color) */
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+
+    /* make window scrollable */
+    overflow-y: scroll;
 }

@@ -13,23 +13,23 @@
 }
 
 #prompt-background #prompt-body {
-    background: rgba(26, 26, 26, 0.5);
+    background: rgba(77, 88, 99, 0.5);
     max-width: 40em;
     border-radius: 0.5em;
     overflow-y: hidden;
-    border: 1px solid gray;
+    border: 1px solid white;
 }
 
 #prompt-background #prompt-body .seperator {
-    width: 98%;
+    width: 97%;
     height: 1px;
-    background: gray;
+    background: white;
+    border-radius: 1em;
     margin: 0 auto;
 }
 
 #prompt-background #prompt-body .title {
     margin: 0;
-    background: #0f0e12;
     color: white;
     padding: 0.1em 0.8em;
     font-size: 1.8em;
@@ -60,13 +60,20 @@
     font-size: 1em;
     padding: 0.3em 0.6em;
     border-radius: 0.2em;
-    background: var(--light-gray);
-    border: 1px solid black;
-    font-weight: bold;
+    border: 1px solid white;
     color: var(--purple);
-    backdrop-filter: saturate(2);
-    /* transition: backdrop-filter 0.2s; */
+    background: rgba(78, 76, 76, 0.8);
+    color: white;
+    font-weight: bold;
+    transition-property: background color;
+    transition-duration: 0.4s;
 }
 
-#prompt-background #prompt-body .content-wrapper .btn-wrapper button:hover {
+#prompt-background #prompt-body .content-wrapper .btn-wrapper button:not(.ok-btn):hover {
+    background: white;
+    color: black;
+}
+
+#prompt-background #prompt-body .content-wrapper .btn-wrapper .ok-btn {
+    background: linear-gradient(to top right, #a09cf1 40%, #7878db 100%);
 }

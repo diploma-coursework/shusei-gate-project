@@ -15,7 +15,9 @@
             <div id="root"></div>
         </div>
 
-        <!-- custom prompt elements -->
+        <!-- 
+            custom prompt elements 
+        -->
         <div id="prompt-background">
             <div id="prompt-body">
                 <h1 class="title">title here</h1>
@@ -28,13 +30,36 @@
                         Expedita odio dolores laudantium eligendi? Quos, dicta ad? Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Minus dignissimos voluptatem voluptatibus reprehenderit esse
                         laborum harum quis totam, ab excepturi voluptate voluptatum iure eos qui fugiat, repudiandae
-                        consequatur veniam nulla.
+                        consequatur veniam nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                        assumenda obcaecati optio earum numquam necessitatibus qui dolor, atque adipisci, exercitationem
+                        saepe explicabo voluptatem quae eos expedita perspiciatis, at impedit pariatur.
                     </p>
 
                     <div class="btn-wrapper">
-                        <button class="close-btn">Close</button>
-                        <button class="ok-btn">OK</button>
-                        <button class="cancel-btn">Cancel</button>
+                        <button
+                            class="close-btn"
+                            onclick="() => {
+                                document.querySelector('#prompt-background').classList.remove('show');
+                            }"
+                        >
+                            Close
+                        </button>
+                        <button
+                            class="ok-btn"
+                            onclick="() => {
+                            document.querySelector('#prompt-background').classList.remove('show');
+                        }"
+                        >
+                            OK
+                        </button>
+                        <button
+                            class="cancel-btn"
+                            onclick="() => {
+                            document.querySelector('#prompt-background').classList.remove('show');
+                        }"
+                        >
+                            Cancel
+                        </button>
                     </div>
                 </div>
             </div>

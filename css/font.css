@@ -4,6 +4,7 @@
         url('/lib/fonts/Quicksand-Light.ttf'), url('/lib/fonts/Quicksand-SemiBold.ttf');
 }
 
-#root {
+#root,
+#prompt-body {
     font-family: 'Quicksand', sans-serif;
 }

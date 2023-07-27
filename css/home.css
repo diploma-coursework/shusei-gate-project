@@ -46,7 +46,6 @@
     display: flex;
     height: var(--window-height);
     max-width: var(--window-width);
-    /*  */
 
     .title {
         width: 40%;

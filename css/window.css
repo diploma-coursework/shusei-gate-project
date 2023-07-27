@@ -29,4 +29,25 @@
 
     /* make window scrollable */
     overflow-y: scroll;
+
+    /* scroll styles */
+    /* width */
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: var(--gray-4);
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: var(--purple);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--purple-light);
+    }
 }

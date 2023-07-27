@@ -1,3 +1,6 @@
+@import url(./transitions/fadeIn.css);
+@import url(./transitions/textPopUp.css);
+
 @keyframes CircleRipple {
     0% {
         height: 0;
@@ -56,14 +59,65 @@
             font-size: 3.4em;
         }
 
+        .welcome-txt {
+            animation-name: FadeInLeft;
+            animation-duration: 1.5s;
+        }
+
         .to-txt {
             padding-left: 0.2em;
+            animation-name: FadeInLeft;
+            animation-duration: 1.5s;
+            animation-delay: 0.3s;
+            animation-fill-mode: forwards;
+            opacity: 0;
         }
 
         .shusei-gate-txt {
-            font-size: 4em;
-            font-weight: bold;
-            color: var(--cyan);
+            display: flex;
+            overflow: hidden;
+
+            & span {
+                font-size: 4em;
+                font-weight: bold;
+                color: var(--cyan);
+                animation-name: TextPopUp;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                opacity: 0;
+
+                &:nth-child(1) {
+                    animation-delay: 0.6s;
+                }
+                &:nth-child(2) {
+                    animation-delay: 0.7s;
+                }
+                &:nth-child(3) {
+                    animation-delay: 0.8s;
+                }
+                &:nth-child(4) {
+                    animation-delay: 0.9s;
+                }
+                &:nth-child(5) {
+                    animation-delay: 1s;
+                }
+                &:nth-child(6) {
+                    margin-right: 0.5em;
+                    animation-delay: 0.9s;
+                }
+                &:nth-child(7) {
+                    animation-delay: 1.2s;
+                }
+                &:nth-child(8) {
+                    animation-delay: 1.3s;
+                }
+                &:nth-child(9) {
+                    animation-delay: 1.4s;
+                }
+                &:nth-child(10) {
+                    animation-delay: 1.5s;
+                }
+            }
         }
     }
 

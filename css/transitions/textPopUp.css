@@ -1,0 +1,10 @@
+@keyframes TextPopUp {
+    0% {
+        transform: translateY(4em);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

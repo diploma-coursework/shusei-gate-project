@@ -150,6 +150,11 @@
                 color: var(--gray-1);
                 width: 70%;
                 line-height: 1.5em;
+                opacity: 0;
+                animation-name: FadeIn;
+                animation-duration: 2.5s;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
 
                 & span {
                     font-style: italic;

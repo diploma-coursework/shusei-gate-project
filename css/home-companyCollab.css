@@ -1,0 +1,14 @@
+.home .company-collab {
+    width: var(--window-width);
+
+    .carousel {
+        width: 100%;
+
+        & img {
+            width: 100%;
+            /* object-fit: cover; */
+            object-position: center;
+            clip-path: polygon(0 18%, 100% 6%, 100% 75%, 0 73%);
+        }
+    }
+}

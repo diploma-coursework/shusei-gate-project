@@ -15,7 +15,6 @@
 #root-wrapper #root {
     width: var(--window-width);
     height: var(--window-height);
-    padding: 1em;
     z-index: 1;
     border: 1px solid gray;
     border-radius: 0.5em;
@@ -29,6 +28,7 @@
 
     /* make window scrollable */
     overflow-y: scroll;
+    overflow-x: hidden;
 
     /* scroll styles */
     /* width */

@@ -45,11 +45,13 @@
 .home {
     .hero {
         display: flex;
+        justify-content: center;
+        gap: 5em;
         height: var(--window-height);
-        max-width: var(--window-width);
+        width: var(--window-width);
 
         .text-wrapper {
-            width: 40%;
+            width: 30%;
             padding-left: 6em;
             margin: auto 0;
 
@@ -143,13 +145,14 @@
                     width: min-content;
                     height: min-content;
                     font-size: 1.2em;
+                    font-weight: bold;
                     margin: 0;
                 }
 
                 .main-paragraph {
                     font-size: 1.2em;
                     color: var(--gray-1);
-                    width: 70%;
+                    width: 80%;
                     line-height: 1.5em;
                     opacity: 0;
                     animation-name: FadeIn;
@@ -180,12 +183,12 @@
         }
 
         .visual {
-            width: 60%;
+            width: 50%;
             display: flex;
 
             .circles {
                 position: relative;
-                margin: 7em 0 0 4em;
+                margin: 8.5em 0 0 4em;
 
                 .circle-ripple {
                     position: absolute;

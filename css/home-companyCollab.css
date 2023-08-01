@@ -6,7 +6,7 @@
         position: relative;
         height: calc(var(--window-height) * 0.7);
 
-        & .content img {
+        & .content-wrapper .content img {
             width: 90%;
             margin: 0 5%;
             height: 100%;

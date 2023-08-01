@@ -43,11 +43,11 @@
 
     /* Handle */
     &::-webkit-scrollbar-thumb {
-        background: var(--purple);
+        background: var(--pink-dark);
     }
 
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
-        background: var(--purple-light);
+        background: var(--pink);
     }
 }

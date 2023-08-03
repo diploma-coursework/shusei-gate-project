@@ -1,7 +1,6 @@
 :root {
     --whitish-gray: #d4c8db;
     --cyan: #94f3e7;
-    --cyan-rgb: 148, 243, 231;
     --pink: #ffc2f5;
     --pink-dark: #de73cc;
 
@@ -10,4 +9,8 @@
     --gray-2: #5d737e;
     --gray-3: #4b5d66;
     --gray-4: #2c373c;
+
+    --cyan-rgb: 148, 243, 231;
+    --pink-rgb: 255, 194, 245;
+    --pink-dark-rgb: 222, 115, 204;
 }

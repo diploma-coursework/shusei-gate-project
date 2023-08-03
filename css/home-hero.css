@@ -182,27 +182,41 @@
                 }
             }
 
-            & button {
-                font-size: 1.3em;
-                font-weight: bold;
-                color: var(--cyan);
-                border: 2px solid var(--cyan);
-                border-radius: 0.2em;
-                padding: 0.4em 0.7em;
-                background: none;
-                margin-top: 1em;
-                cursor: pointer;
-                transition-property: background, color, border, box-shadow;
-                transition-duration: 0.4s;
+            & .btn-wrapper {
+                display: flex;
+                gap: 1.5em;
 
-                /* window shadow effect (h-offset, v-offset, blur, color) */
-                box-shadow: 2px 2px 15px rgba(var(--cyan-rgb), 0.6);
+                & button {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    border-radius: 0.2em;
+                    padding: 0.4em 0.7em;
+                    background: none;
+                    margin-top: 1em;
+                    cursor: pointer;
+                    transition-property: background, color, border, box-shadow;
+                    transition-duration: 0.4s;
 
-                &:hover {
-                    background: white;
-                    color: black;
-                    border: 2px solid white;
-                    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+                    &.learn-more-btn {
+                        border: 2px solid var(--pink-dark);
+                        color: var(--pink-dark);
+                        /* window shadow effect (h-offset, v-offset, blur, color) */
+                        box-shadow: 2px 2px 15px rgba(var(--pink-dark-rgb), 0.6);
+                    }
+
+                    &.signup-btn {
+                        border: 2px solid var(--cyan);
+                        color: var(--cyan);
+                        /* window shadow effect (h-offset, v-offset, blur, color) */
+                        box-shadow: 2px 2px 15px rgba(var(--cyan-rgb), 0.6);
+                    }
+
+                    &:hover {
+                        background: white;
+                        color: black;
+                        border: 2px solid white;
+                        box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+                    }
                 }
             }
         }

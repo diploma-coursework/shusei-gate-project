@@ -58,7 +58,6 @@ span.psw{
     padding-top: 16px;
 }
 
-
 .modal{
     display : none; /* Hidden by default*/
     position :fixed; /* Stay in place */
@@ -96,5 +95,31 @@ span.psw{
     cursor : pointer ;
 }
 
-.animate
+.animate {
+    -webkit-animation: animatezoom 0.5s;
+    amimation:animation 0.5s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform :scale(0)}
+    to{-webkit-transform:scale(1)}
+}
+@keyframes animatezoom {
+    from {transform:scale (0)}
+    to{transform:scale(1)}
+}
+@media screen and (max-width:300px) {
+    span.psw{
+        display:block;
+        float:none;
+    }
+    .cancelbtn{
+        width:100%
+    }  
+}
 </style>
+</head>
+<body>
+
+<h2>Modal Login Form</h2>
+
+<button onclick="document.getElmentyByTd('id01').style.display='block'"style=width:auto;>Login</button>

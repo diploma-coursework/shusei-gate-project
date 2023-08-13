@@ -1,122 +1,77 @@
+
 h1 {
   text-align:center;
 }
-* {box-sizing: border-box}
 
-/* Full-width input fields */
-  input[type=text], input[type=password] {
-  width: 100%;
+
+input[type=text], input[type=password] {
+  width: 40%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: white;
+  padding-right: 30% ;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+label{
+  padding-right: 30%;
 }
 
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-.cancelbutton:hover, .cancelbutton:focus {
-  box-shadow: inset 0 0 0 2em var(--hover);
-}
-
-
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
 .cancelbutton {
-  padding: 14px 20px;
-  background-color: #f44336;
+  border: 2px solid var(--pink-dark);
+  color: var(--pink-dark);
+  /* window shadow effect (h-offset, v-offset, blur, color) */
+  box-shadow: 2px 2px 15px rgba(var(--pink-dark-rgb), 0.6);
 }
 
-/* Float cancel and signup buttons and add an equal width */
-.cancelbutton, .submitbutton {
+.submitbutton {
+    border: 2px solid var(--cyan);
+    color: var(--cyan);
+    /* window shadow effect (h-offset, v-offset, blur, color) */
+    box-shadow: 2px 2px 15px rgba(var(--cyan-rgb), 0.6);
+}
+
+.cancelbutton:hover {
+  background: rgb(233, 87, 87);
+  color: white;
+  border: 2px solid white;
+  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+}
+
+.submitbutton:hover {
+  background: rgb(69, 235, 104);
+  color: white;
+  border: 2px solid white;
+  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+}
+
+button {
+  display: flex;
+  gap: 1.5em;
   float: left;
-  width: 50%;
+  margin-left:30px;
+ }
+
+ button {
+  font-size: 1.3em;
+  font-weight: bold;
+  border-radius: 0.2em;
+  padding: 0.4em 0.7em;
+  background: none;
+  margin-top: 1em;
+  cursor: pointer;
+  transition-property: background, color, border, box-shadow;
+  transition-duration: 0.4s;
 }
 
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbutton, .submitbutton {
-    width: 100%;
-  }
-}
-
-form{
+input[type="checkbox"] {
   display: block;
-  width: 100%;
+  padding-right: 10px;
+  padding-left: 22px;
+  text-indent: -22px;
 }
 
-button{
-  position: relative;
-  
-  &:before {
-    content: '';
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    margin-top: -12px;
-    width: 24px;
-    height: 24px;
-    border: 2px solid;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.5s;
-    animation: 0.8s linear infinite rotate;
-  }
-  &.sending{
-    pointer-events: none;
-    cursor: not-allowed;
-    
-    &:before {
-      transition-delay: 0.5s;
-      transition-duration: 1s;
-      opacity: 1;
-    }
-  }
-}
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+   
+

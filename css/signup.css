@@ -27,7 +27,7 @@ label[for="username"], label[for="email"], label[for="password"] {
   box-shadow: 2px 2px 15px rgba(var(--pink-dark-rgb), 0.6);
 }
 
-.submitbutton {
+.signupbutton {
     border: 2px solid var(--cyan);
     color: var(--cyan);
     /* window shadow effect (h-offset, v-offset, blur, color) */
@@ -41,7 +41,7 @@ label[for="username"], label[for="email"], label[for="password"] {
   box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
 }
 
-.submitbutton:hover {
+.signupbutton:hover {
   background: rgb(69, 235, 104);
   color: white;
   border: 2px solid white;

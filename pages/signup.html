@@ -2,14 +2,12 @@
     <link rel="stylesheet" href="/css/signup.css"/>
 </head>
 <body>
-    <div class="signup">
+    <div id="idsignup"class="signup">
         <h1>Sign Up platform</h1>
-    </div>
-
 <hr>
 
 <!--Create a signup platform-->
-<form>
+<form class="Information">
 <div class="container">
     <p>Please fill up all the informations to create an account</p>
 
@@ -36,18 +34,14 @@
     <label id="agr"><input type="checkbox" class="agreechk" checked="checked" name="agree">agree</label>
 
     <div>
-
-
         <!--Redirect user back to homepage-->
         <button type="button" class="cancelbutton" onclick="window.location.href ='index.html';">Cancel</button>
 
-        <!--redirect user to userhomepage-->
-       
-
-      
+        <!--store user signup data and direct to homepage--> 
+        <button type="submit" class="signupbutton">Sign Up</button>
 
     </div>
-  
+    </div>
 </div>
 <script src="/js/signup.js"></script>
 </form>

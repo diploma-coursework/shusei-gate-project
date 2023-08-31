@@ -1,4 +1,22 @@
-<head></head>
+<head>
+    <link rel="stylesheet" href="/css/userNavbar.css" />
+</head>
 <body>
-    <h1>cart page</h1>
+    <div class="navbar">
+        <div class="user-greet">
+            <img src="/assets/generic_user.png" alt="user profile picture" />
+            <h1>Hi, {user}.</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li data-page-redirect="#user" class="events-selection nav-selection">Events</li>
+                <li data-page-redirect="#cart" class="cart-selection nav-selection selected">Cart</li>
+                <li data-page-redirect="#my-tickets" class="my-tickets-selection nav-selection">My Tickets</li>
+                <li data-page-redirect="#profile" class="profile-selection nav-selection">Profile</li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="/js/userNavbar.js"></script>
 </body>

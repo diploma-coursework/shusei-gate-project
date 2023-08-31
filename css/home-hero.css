@@ -204,7 +204,7 @@
                         box-shadow: 2px 2px 15px rgba(var(--pink-dark-rgb), 0.6);
                     }
 
-                    &.signup-btn {
+                    &.login-btn {
                         border: 2px solid var(--cyan);
                         color: var(--cyan);
                         /* window shadow effect (h-offset, v-offset, blur, color) */

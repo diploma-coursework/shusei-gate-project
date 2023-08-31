@@ -28,17 +28,16 @@
         width: 0;
         margin-left: 15em;
         margin-top: 15em;
-    }
-    1% {
-        background: var(--gray-4);
+        filter: brightness(0);
     }
     60% {
         opacity: 1;
+        filter: brightness(70%);
     }
     100% {
         height: 30em;
         width: 30em;
-        background: var(--gray-1);
+        filter: brightness(100%);
     }
 }
 
@@ -239,6 +238,9 @@
                 }
 
                 .circle-body {
+                    background: url(/assets/starry_sky.jpg);
+                    background-position: bottom center;
+                    background-size: cover;
                     position: absolute;
                     border-radius: 50%;
                     animation-name: CircleGrow;

@@ -7,16 +7,16 @@
         <h1>Log In platform</h1>
         <div class="container">
             <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required placeholder="kimbenw" /><br />
+                <label for="email">Username:</label>
+                <input type="email" id="email" name="email" required placeholder="kimbenw@gmail.com" /><br />
 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required /><br />
 
-                <button type="submit">Login</button>
+                <button id="login-btn" type="submit">Login</button>
                 <button type="cancel">cancel</button>
             </form>
-            <h3>Log in sucess.</h3>
+            <h3 class="form-error-msg"></h3>
             <h4>Not A User ?</h4>
 
             <!--for user to cretae a new acc-->
@@ -25,5 +25,7 @@
                 <button type="signup">Create An Account</button>
             </route-to>
         </div>
+
+        <script type="module" src="/js/login.js"></script>
     </body>
 </html>

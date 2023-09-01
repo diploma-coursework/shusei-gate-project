@@ -1,30 +1,42 @@
-
-h1{
-  text-align:center;
+h1 {
+    text-align: center;
 }
 
-input[type=text], input[type=password] {
-  width: 40%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: white;
-  padding-right: 30% ;
+.container {
+    display: block;
+    margin: 2em auto;
+    width: fit-content;
 }
 
-label[for="username"], label[for="email"], label[for="password"] {
-  padding-right: 30%;
-  display: inline-block;
-  width: 80px;
-  height: 34px;
+.container .form-error-msg {
+    margin-bottom: 2em;
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: white;
+    padding-right: 30%;
+}
+
+label[for='username'],
+label[for='email'],
+label[for='password'] {
+    padding-right: 30%;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
 }
 
 .cancelbutton {
-  border: 2px solid var(--pink-dark);
-  color: var(--pink-dark);
-  /* window shadow effect (h-offset, v-offset, blur, color) */
-  box-shadow: 2px 2px 15px rgba(var(--pink-dark-rgb), 0.6);
+    border: 2px solid var(--pink-dark);
+    color: var(--pink-dark);
+    /* window shadow effect (h-offset, v-offset, blur, color) */
+    box-shadow: 2px 2px 15px rgba(var(--pink-dark-rgb), 0.6);
 }
 
 .signupbutton {
@@ -35,47 +47,43 @@ label[for="username"], label[for="email"], label[for="password"] {
 }
 
 .cancelbutton:hover {
-  background: rgb(233, 87, 87);
-  color: white;
-  border: 2px solid white;
-  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+    background: rgb(233, 87, 87);
+    color: white;
+    border: 2px solid white;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
 }
 
 .signupbutton:hover {
-  background: rgb(69, 235, 104);
-  color: white;
-  border: 2px solid white;
-  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+    background: rgb(69, 235, 104);
+    color: white;
+    border: 2px solid white;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
 }
 
 button {
-  display: flex;
-  gap: 1.5em;
-  float: left;
-  margin-left:30px;
- }
+    display: flex;
+    gap: 1.5em;
+    float: left;
+    margin-left: 30px;
+}
 
- button {
-  font-size: 1.3em;
-  font-weight: bold;
-  border-radius: 0.2em;
-  padding: 0.4em 0.7em;
-  background: none;
-  margin-top: 1em;
-  cursor: pointer;
-  transition-property: background, color, border, box-shadow;
-  transition-duration: 0.4s;
+button {
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 0.2em;
+    padding: 0.4em 0.7em;
+    background: none;
+    margin-top: 1em;
+    cursor: pointer;
+    transition-property: background, color, border, box-shadow;
+    transition-duration: 0.4s;
 }
 
 label#rem {
-  display: inline-block;
-  padding-right: 30%;
-
+    display: inline-block;
+    padding-right: 30%;
 }
 
-
-
-
-
-   
-
+.btn-container {
+    margin-top: 2em;
+}

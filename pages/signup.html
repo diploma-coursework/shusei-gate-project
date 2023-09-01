@@ -20,22 +20,24 @@
                 <input type="text" placeholder="Enter your email" name="email" required />
 
                 <!--password-->
-                <label for="password"><b>password:</b></label>
+                <label for="password"><b>Password:</b></label>
                 <input type="password" placeholder="Enter your password" name="password" required />
 
                 <!--Terms and Conditions-->
                 <p>
-                    By creating an account you agree to our<a
-                        href="/pages/terms&conditions.html"
-                        style="color: dodgerblue"
-                        >Terms & Privacy</a
-                    >
+                    By creating an account you agree to our
+                    <a href="https://www.example.com/shusei-gate-tnc" target="_blank" style="color: dodgerblue"
+                        >Terms & Privacy
+                    </a>
+                    <!-- 
+                        target black opens another tab instead of redirecting
+                    -->
                 </p>
 
                 <!--checkbox for agree of terms and conditions-->
                 <label id="agr"><input type="checkbox" class="agreechk" checked name="agree" />Agree</label>
 
-                <div>
+                <div class="btn-container">
                     <!--Redirect user back to homepage-->
                     <route-to href="#"><button type="button" class="cancelbutton">Cancel</button></route-to>
 

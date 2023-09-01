@@ -3,3 +3,5 @@ document.querySelectorAll('.navbar .nav-selection').forEach((navSelection) =>
         document.location.hash = event.target.getAttribute('data-page-redirect');
     })
 );
+
+document.querySelector('h1 span.username').textContent = document.cookie.match(/(?<=username=)[^;|\s|\n]+/)[0];

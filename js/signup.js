@@ -37,3 +37,13 @@ document.addEventListener('submit', async (event) => {
     showErrorMessage(signupFailMsg);
     signupButtonElement.disabled = false;
 });
+
+function ShowPass() {
+    var pass = document.getElementById("Password");
+       if (pass.type === "password") {
+           pass.type = "text";
+       }
+       else {
+           pass.type = "password";
+       }
+}

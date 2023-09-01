@@ -13,17 +13,19 @@ const showErrorMessage = (msg) => {
 document.addEventListener('submit', async (event) => {
     event.preventDefault();
 
+    const loginBtnElement = document.querySelector('button#login-btn');
+    loginBtnElement.disabled = true;
+
     const inputValues = {
         email: document.querySelector('input#email').value,
         password: document.querySelector('input#password').value,
     };
 
-    const loginBtnElement = document.querySelector('button#login-btn');
-    console.log(loginBtnElement);
-    loginBtnElement.disabled = true;
-
     const signupFailMsg = await ShuSeiGateAPI.loginUser(inputValues.email, inputValues.password);
-    if (signupFailMsg === true) document.location.hash = '#user-home';
+    if (signupFailMsg === true) {
+        document.location.hash = '#user-home';
+        return;
+    }
 
     showErrorMessage(signupFailMsg);
     loginBtnElement.disabled = false;

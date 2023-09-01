@@ -18,6 +18,9 @@ document.addEventListener('submit', async (event) => {
         return;
     }
 
+    const signupButtonElement = document.querySelector('button.signupbutton[type="submit"]');
+    signupButtonElement.disabled = true;
+
     const inputValues = {
         username: document.querySelector('input[name="username"]').value,
         email: document.querySelector('input[name="email"]').value,
@@ -28,7 +31,9 @@ document.addEventListener('submit', async (event) => {
     if (signupFailMsg === true) {
         alert('Successfully signed up.');
         document.location.hash = '#login';
+        return;
     }
 
     showErrorMessage(signupFailMsg);
+    signupButtonElement.disabled = false;
 });

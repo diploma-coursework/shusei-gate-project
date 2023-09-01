@@ -13,6 +13,7 @@ h1 {
 }
 
 input[type='text'],
+input[type='email'],
 input[type='password'] {
     width: 60%;
     padding: 15px;
@@ -86,4 +87,8 @@ label#rem {
 
 .btn-container {
     margin-top: 2em;
+}
+
+button:disabled {
+    filter: brightness(50%);
 }

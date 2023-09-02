@@ -1,50 +1,54 @@
 <head>
-    <link rel="stylesheet" href="/css/signup.css"/>
+    <link rel="stylesheet" href="/css/signup.css" />
 </head>
 <body>
-    <div id="idsignup"class="signup">
+    <div id="idsignup" class="signup">
         <h1>Sign Up platform</h1>
-<hr>
+        <hr />
 
-<!--Create a signup platform-->
-<form class="Information">
-<div class="container">
-    <p>Please fill up all the informations to create an account</p>
+        <!--Create a signup platform-->
+        <form class="Information">
+            <div class="container">
+                <p class="form-error-msg">Please fill up all the informations to create an account</p>
 
-    <!--Username-->
-    <label for="username"><b>Username:</b></label>
-    <input type="text" placeholder="Enter your username" name="Username" required>
+                <!--Username-->
+                <label for="username"><b>Username:</b></label>
+                <input type="text" placeholder=" Enter your username (maximum length 20) " maxlength="20" name="username" required />
 
-    <!--email-->
-    <label for="email"><b>Email:</b></label>
-    <input type="text" placeholder="Enter your email" name="email" required>
+                <!--email-->
+                <label for="email"><b>Email:</b></label>
+                <input type="email" placeholder="Example1234@gmail.com" maxlength="30" name="email" required />
 
-    <!--password-->
-    <label for="password"><b>password:</b></label>
-    <input type="password" placeholder="Enter your password" name="password" required>
+                <!--password-->
+                <label for="password"><b>Password:</b></label>
+                <input type="password" placeholder="Enter your password" id="Password" maxlength="10" name="password" required />
 
+                <!--Check validity of password-->
+                <input type="checkbox" onlick="ShowPass()">
 
-    <!--A checkbox to remember user's password-->
-    <label id="rem"><input type="checkbox" class="rememberchk" checked="checked" name="remember">Remember me</label>
+                <!--Terms and Conditions-->
+                <p>
+                    By creating an account you agree to our
+                    <a href="https://www.example.com/shusei-gate-tnc" target="_blank" style="color: dodgerblue"
+                        >Terms & Privacy
+                    </a>
+                    <!-- 
+                        target black opens another tab instead of redirecting
+                    -->
+                </p>
 
-    <!--Terms and Conditions-->                   
-    <p>By creating an account you agree to our<a href="/pages/terms&conditions.html" style="color:dodgerblue">Terms & Privacy</a></p>
+                <!--checkbox for agree of terms and conditions-->
+                <label id="agr"><input type="checkbox" class="agreechk" checked name="agree" />Agree</label>
 
-    <!--checkbox for agree of terms and conditions-->
-    <label id="agr"><input type="checkbox" class="agreechk" checked="checked" name="agree">agree</label>
+                <div class="btn-container">
+                    <!--Redirect user back to homepage-->
+                    <route-to href="#"><button type="button" class="cancelbutton">Cancel</button></route-to>
 
-    <div>
-        <!--Redirect user back to homepage-->
-        <button type="button" class="cancelbutton" onclick="window.location.href ='index.html';">Cancel</button>
-
-        <!--store user signup data and direct to homepage--> 
-        <button type="submit" class="signupbutton">Sign Up</button>
-
+                    <!--store user signup data and direct to homepage-->
+                    <button type="submit" class="signupbutton">Sign Up</button>
+                </div>
+            </div>
+        </form>
     </div>
-    </div>
-</div>
-<script src="/js/signup.js"></script>
-</form>
-
+    <script type="module" src="/js/signup.js"></script>
 </body>
-

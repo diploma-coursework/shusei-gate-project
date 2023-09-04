@@ -1,60 +1,31 @@
 <!DOCTYPE html>
-<html>       
-<head>
-    <link rel="stylesheet" href="/css/userNavbar.css" />
-    <link href="/css/userHome.css" rel="stylesheet"/>
-</head>
-<body>
-      <!-- For the Navigation Lists On Top -->
-    <div class="navbar">
-        <div class="user-greet">
-            <img src="/assets/generic_user.png" alt="user profile picture" />
-            <h1>Hi, <span class="username"></span>.</h1>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/userNavbar.css" />
+        <link rel="stylesheet" href="/css/userHome.css" />
+    </head>
+    <body>
+        <!-- For the Navigation Lists On Top -->
+        <div class="navbar">
+            <div class="user-greet">
+                <img src="/assets/generic_user.png" alt="user profile picture" />
+                <h1>Hi, <span class="username"></span>.</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li data-page-redirect="#user-home" class="events-selection nav-selection selected">Events</li>
+                    <li data-page-redirect="#cart" class="cart-selection nav-selection">Cart</li>
+                    <li data-page-redirect="#my-tickets" class="my-tickets-selection nav-selection">My Tickets</li>
+                    <li data-page-redirect="#profile" class="profile-selection nav-selection">Profile</li>
+                </ul>
+            </nav>
         </div>
 
-        <nav>
-            <ul>
-                <li data-page-redirect="#user-home" class="events-selection nav-selection selected">Events</li>
-                <li data-page-redirect="#cart" class="cart-selection nav-selection">Cart</li>
-                <li data-page-redirect="#my-tickets" class="my-tickets-selection nav-selection">My Tickets</li>
-                <li data-page-redirect="#profile" class="profile-selection nav-selection">Profile</li>
-            </ul>
-        </nav>
-    </div>
+        <!-- The Title Part -->
+        <h1 class="schedule">SCHEDULE</h1>
+        <hr />
 
-    <script src="/js/userNavbar.js"></script>
-    
-      <!-- The Title Part -->
-    <h1 class="schedule"> SCHEDULE </h1>
-    <hr/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+        <script src="/js/userNavbar.js"></script>
+    </body>
 </html>

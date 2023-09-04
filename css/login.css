@@ -5,9 +5,9 @@ h1 {
     text-align:center;
     animation:glow 2s ease-in-out infinite alternate;
 }
-@-webkit-keyframes glow {
+@keyframes glow {
     from{
-        text-shawdow : 0 0 30px #fff, 0 0 40px #33a3f2,0 0 50px #33a3f2,0 0 60px #33a3f2,0 0 70px #33a3f2,0 0 80px #33a3f2;
+        text-shadow : 0 0 30px #fff, 0 0 40px #33a3f2,0 0 50px #33a3f2,0 0 60px #33a3f2,0 0 70px #33a3f2,0 0 80px #33a3f2;
     }
     to {
         text-shadow: 0 0 40px #fff ,0 0 50px #33a3f2, 0 0 60px #33a3f2, 0 0 70px #33a3f2, 0 0 80px #33a3f2 , 0 0 90px#33a3f2;

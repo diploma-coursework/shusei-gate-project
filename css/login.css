@@ -33,12 +33,12 @@ body {
     background-color:#e381b2;
 }
 
-label{
+label {
     display:block;
     margin-bottom:5px;
 }
 
-input[type="text"],input[type="password"]{
+input[type="text"],input[type="password"] {
     width:100%;
     padding:8px;
     margin-bottom:10px;

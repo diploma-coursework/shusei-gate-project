@@ -96,3 +96,8 @@ button:disabled {
 #text {
     display: block;
 }
+
+.showpass-checkbox {
+    display: block;
+    margin-bottom: 3em;
+}

@@ -21,10 +21,14 @@
 
                 <!--password-->
                 <label for="password"><b>Password:</b></label>
-                <input type="password" placeholder="Enter your password" id="Password" maxlength="10" name="password" required />
+                <input type="password" id="user_Input" placeholder="Enter your password" maxlength="10" name="password" required />
 
                 <!--Check validity of password-->
-                <input type="checkbox" onlick="ShowPass()">
+                <div class="showpass-checkbox">
+                    <input type="checkbox" onclick="showpassFunction()"/>Show password</input>
+                </div>
+                
+                 <script type="PasswordVisibility" src="/js/togglePasswordVisi.js"></script>
 
                 <!--Terms and Conditions-->
                 <p>

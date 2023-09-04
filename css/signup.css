@@ -93,10 +93,6 @@ button:disabled {
     filter: brightness(50%);
 }
 
-#text {
-    display: block;
-}
-
 .showpass-checkbox {
     display: block;
     margin-bottom: 3em;

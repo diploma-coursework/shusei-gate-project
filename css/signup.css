@@ -92,3 +92,7 @@ label#rem {
 button:disabled {
     filter: brightness(50%);
 }
+
+#text {
+    display: block;
+}

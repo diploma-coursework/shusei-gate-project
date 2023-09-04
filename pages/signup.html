@@ -24,17 +24,9 @@
                 <input type="password" id="user_Input" placeholder="Enter your password" maxlength="10" name="password" required />
 
                 <!--Check validity of password-->
-                <input type="checkbox" onclick="showpassFunction()"/>
-                 <script>
-                     function showpassFunction(){
-                         var x = document.getElementById("user_Input");
-                       if (x.type === "password") {
-                         x.type = "text";
-                       } else {
-                        x.type = "password";
-                       }
-                     }
-                 </script>
+                <input type="checkbox" onclick="showpassFunction()"/>Show password</input>
+                
+                 <script type="PasswordVisibility" src="/js/togglePasswordVisi.js"></script>
 
                 <!--Terms and Conditions-->
                 <p>
@@ -60,5 +52,5 @@
             </div>
         </form>
     </div>
-    <script type="module" src="/js/signup.js"></script>></script>
+    <script type="module" src="/js/signup.js"></script>
 </body>

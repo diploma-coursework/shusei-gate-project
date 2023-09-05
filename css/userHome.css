@@ -1,0 +1,46 @@
+.schedule {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #0800f4;
+    text-align: center;
+    line-height: 2em;
+    background-image: url("/images/bluestar.jpeg");
+    height: 140px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 10px;
+    text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* White glow */
+    0 0 42px rgb(255, 255, 255),
+    0 0 82px rgb(255, 255, 255),
+    0 0 92px rgb(255, 255, 255),
+    0 0 102px rgb(255, 255, 255),
+    0 0 151px rgb(255, 255, 255);
+}  
+
+div.box-left {
+    display: block;
+    text-align: center;
+    float: left;
+    background-color: red;
+    width: 33.33%;
+}
+
+div.box-middle {
+    display: inline-block;
+    text-align: center;
+    background-color: blue;
+    width: 33.33%;
+    
+}
+
+div.box-right {
+    display: block;
+    text-align: center;
+    float: right;
+    background-color: green;
+    width: 33.33%;
+}

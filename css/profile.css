@@ -6,13 +6,25 @@
 
 
         /* Center the article */
-        .centered-article {
+        .pbigbox {
             margin: 0 auto; /* Set left and right margins to "auto" */
             width: 50%; /* Adjust the width as needed */
             text-align: center; /* Center-align the text inside the article */
             height: 20vmin;
             line-height: 30px;
             padding-top: 110px;
-            border: 1px black;
+            border: 2px solid #000; /* 2px wide solid black border */
+            padding: 20px; /* Optional padding to create space inside the border */
+        }
+
+        .pimg {
+            align-items: center;
+            gap: 1em;
+           padding:10px, 100px;
+
+    
+            & img {
+                height: 2.5em;
+            }
         }
    

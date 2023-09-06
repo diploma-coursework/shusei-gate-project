@@ -1,46 +1,140 @@
 .schedule {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
-    color: #0800f4;
+    color: #c300f4;
     text-align: center;
     line-height: 2em;
-    background-image: url("/images/bluestar.jpeg");
+    background-image: url('/assets/bluestar.jpeg');
     height: 140px;
     margin: 0px 0px 0px 0px;
     padding-top: 10px;
     text-shadow:
     /* White glow */
     0 0 7px #fff,
-    0 0 10px #fff,
+    0 0 10px #fff, 
     0 0 21px #fff,
-    /* White glow */
-    0 0 42px rgb(255, 255, 255),
-    0 0 82px rgb(255, 255, 255),
+    0 0 42px rgb(255, 255, 255), 
+    0 0 82px rgb(255, 255, 255), 
     0 0 92px rgb(255, 255, 255),
-    0 0 102px rgb(255, 255, 255),
+    0 0 102px rgb(255, 255, 255), 
     0 0 151px rgb(255, 255, 255);
-}  
+}
 
-div.box-left {
+.box-left {
     display: block;
-    text-align: center;
+    background-image: url('/assets/esports.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     float: left;
-    background-color: red;
+    color: #0022ff;
+    text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff, 
+    0 0 21px #fff,
+    0 0 42px rgb(255, 255, 255), 
+    0 0 82px rgb(255, 255, 255), 
+    0 0 92px rgb(255, 255, 255),
+    0 0 102px rgb(255, 255, 255), 
+    0 0 151px rgb(255, 255, 255);
+    font-size: 23px;
     width: 33.33%;
+    height: 394px;
+    text-align: center;
+    padding-top: 150px;
+    border-radius: 25px;
+    cursor: pointer;
+    filter: blur(1px);
+    transition: 0.4s;
 }
 
-div.box-middle {
+.box-middle {
     display: inline-block;
-    text-align: center;
-    background-color: blue;
+    background-image: url('/assets/gojo.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 0, 234);
+    text-shadow:
+    /* Black glow */
+    0 0 7px #000000,
+    0 0 10px #000000, 
+    0 0 21px #000000,
+    0 0 42px rgb(0, 0, 0), 
+    0 0 82px rgb(0, 0, 0), 
+    0 0 92px rgb(0, 0, 0),
+    0 0 102px rgb(0, 0, 0), 
+    0 0 151px rgb(0, 0, 0);
+    font-size: 23px;
     width: 33.33%;
-    
+    height: 394px;
+    text-align: center;
+    padding-top: 150px;
+    border-radius: 25px;
+    cursor: pointer;
+    filter: blur(1px);
+    transition: 0.4s;
 }
 
-div.box-right {
+.box-right {
     display: block;
-    text-align: center;
+    background-image: url('/assets/walker.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     float: right;
-    background-color: green;
+    color: rgb(0, 255, 225);
+    text-shadow:
+    /* Black glow */
+    0 0 7px #000000,
+    0 0 10px #000000, 
+    0 0 21px #000000,
+    0 0 42px rgb(0, 0, 0), 
+    0 0 82px rgb(0, 0, 0), 
+    0 0 92px rgb(0, 0, 0),
+    0 0 102px rgb(0, 0, 0), 
+    0 0 151px rgb(0, 0, 0);
+    font-size: 23px;
     width: 33.33%;
+    height: 394px;
+    text-align: center;
+    padding-top: 150px;
+    border-radius: 25px;
+    cursor: pointer;
+    filter: blur(1px);
+    transition: 0.4s;
 }
+
+/* Hide Text */
+.hide {
+    display: none;
+}
+.hide2 {
+    display: none;
+}
+.hide3 {
+    display: none;
+}
+
+/* Display Text */
+.box-left:hover .hide {
+    display: block;
+}
+.box-middle:hover .hide2 {
+    display: block;
+}
+.box-right:hover .hide3 {
+    display: block;
+}
+
+/* Unblur Background */
+.box-left:hover {
+    filter: blur(0);
+}
+.box-middle:hover {
+    filter: blur(0);
+}
+.box-right:hover {
+    filter: blur(0);
+}       

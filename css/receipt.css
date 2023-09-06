@@ -3,6 +3,14 @@ h1{
     text-align:center;
 }
 
-thead{
-    font-size:80px;
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th{
+    padding:8px;
+    text-align:center;
+    font-family:'Courier New', Courier, monospace;
+    color:#feacd2;
+    text-align:center;
 }

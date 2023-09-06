@@ -29,7 +29,7 @@ body {
     border-radius: 25px;
 }
 
-.login:hover{
+.login-container:hover{
     background-color:#e381b2;
 }
 
@@ -59,10 +59,11 @@ input[type='password'] {
 }
 
 button {
-    background-color: #027cf0;
-    color: #fff;
+    color: #0000ff;
+    font-family:monospace;
     padding: 8px 15px;
-    border-radius: 2px;
+    border-radius: 30px;
+    background: #6e85f0;
 }
 
 .cancelbtn {
@@ -70,6 +71,9 @@ button {
 }
 .signupbtn {
     background: #030303;
+}
+.signupbtn:hover{
+    background-color: #e381b2;
 }
 
 .container {

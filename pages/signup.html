@@ -12,19 +12,23 @@
                 <p class="form-error-msg">Please fill up all the informations to create an account</p>
 
                 <!--Username-->
-                <label for="username"><b>Username:</b></label>
-                <input type="text" placeholder=" Enter your username (maximum length 20) " maxlength="20" name="username" required />
-
+                 <label for="username"><b>Username:</b></label>
+                 <input type="text" placeholder=" Enter your username (maximum length 20) " maxlength="20" name="username" required checked/>
+               
                 <!--email-->
-                <label for="email"><b>Email:</b></label>
-                <input type="email" placeholder="Example1234@gmail.com" maxlength="30" name="email" required />
-
+                 <label for="email"><b>Email:</b></label>
+                 <input type="email" placeholder="Example1234@gmail.com" maxlength="30" name="email" required checked/>
+                
                 <!--password-->
-                <label for="password"><b>Password:</b></label>
-                <input type="password" placeholder="Enter your password" id="Password" maxlength="10" name="password" required />
-
+                 <label for="password"><b>Password:</b></label>
+                 <input type="password" id="user_Input" placeholder="Enter your password" maxlength="10" name="password" required checked/>
+              
                 <!--Check validity of password-->
-                <input type="checkbox" onlick="ShowPass()">
+                <div class="showpass-checkbox">
+                    <input type="checkbox" onclick="showpassFunction()"/>Show password</input>
+                </div>
+                
+                 <script type="PasswordVisibility" src="/js/togglePasswordVisi.js"></script>
 
                 <!--Terms and Conditions-->
                 <p>

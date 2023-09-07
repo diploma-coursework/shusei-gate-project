@@ -1,7 +1,10 @@
+/*header*/
 h1 {
     text-align: center;
+    
 }
 
+/*container*/
 .container {
     display: block;
     margin: 2em auto;
@@ -12,6 +15,7 @@ h1 {
     margin-bottom: 2em;
 }
 
+/*Label and input*/
 input[type='text'],
 input[type='email'],
 input[type='password'] {
@@ -22,6 +26,9 @@ input[type='password'] {
     border: none;
     background: white;
     padding-right: 30%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
 }
 
 label[for='username'],
@@ -33,6 +40,17 @@ label[for='password'] {
     height: 34px;
 }
 
+label#rem {
+    display: inline-block;
+    padding-right: 30%;
+}
+
+.showpass-checkbox {
+    display: block;
+    margin-bottom: 3em;
+}
+
+/*Button*/
 .cancelbutton {
     border: 2px solid var(--pink-dark);
     color: var(--pink-dark);
@@ -47,6 +65,7 @@ label[for='password'] {
     box-shadow: 2px 2px 15px rgba(var(--cyan-rgb), 0.6);
 }
 
+/* Button hover*/
 .cancelbutton:hover {
     background: rgb(233, 87, 87);
     color: white;
@@ -61,6 +80,7 @@ label[for='password'] {
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
 }
 
+/*additional button design*/
 button {
     display: flex;
     gap: 1.5em;
@@ -80,10 +100,10 @@ button {
     transition-duration: 0.4s;
 }
 
-label#rem {
-    display: inline-block;
-    padding-right: 30%;
+button:disabled {
+    filter: brightness(50%);
 }
+
 
 .btn-container {
     margin-top: 2em;
@@ -92,3 +112,6 @@ label#rem {
 button:disabled {
     filter: brightness(50%);
 }
+
+
+

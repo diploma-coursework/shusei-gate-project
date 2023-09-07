@@ -1,22 +1,62 @@
-<head>
-    <link rel="stylesheet" href="/css/userNavbar.css" />
-</head>
-<body>
-    <div class="navbar">
-        <div class="user-greet">
-            <img src="/assets/generic_user.png" alt="user profile picture" />
-            <h1>Hi, <span class="username"></span>.</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/userNavbar.css" />
+        <link rel="stylesheet" href="/css/userHome.css" />
+    </head>
+    <body>
+        <!-- For the Navigation Lists On Top -->
+        <div class="navbar">
+            <div class="user-greet">
+                <img src="/assets/generic_user.png" alt="user profile picture" />
+                <h1>Hi, <span class="username"></span>.</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li data-page-redirect="#user-home" class="events-selection nav-selection selected">Events</li>
+                    <li data-page-redirect="#cart" class="cart-selection nav-selection">Cart</li>
+                    <li data-page-redirect="#my-tickets" class="my-tickets-selection nav-selection">My Tickets</li>
+                    <li data-page-redirect="#profile" class="profile-selection nav-selection">Profile</li>
+                </ul>
+            </nav>
         </div>
 
-        <nav>
-            <ul>
-                <li data-page-redirect="#user-home" class="events-selection nav-selection selected">Events</li>
-                <li data-page-redirect="#cart" class="cart-selection nav-selection">Cart</li>
-                <li data-page-redirect="#my-tickets" class="my-tickets-selection nav-selection">My Tickets</li>
-                <li data-page-redirect="#profile" class="profile-selection nav-selection">Profile</li>
-            </ul>
-        </nav>
-    </div>
-
     <script src="/js/userNavbar.js"></script>
-</body>
+
+        <!-- The title part -->
+    
+        <h1 class="schedule"> EVENT SCHEDULE</h1> 
+            <div class="main">
+                <div class="box-left"> 
+                    <div class="hide">
+                        <h2><i> ESPORTS </i></h2>
+                        <p><i><b> Where Gamers From All Around The Globe Unite! </b></i></p>
+                        <button class="button"> Check Available Slots </button>
+                        <br/>
+                        <button class="button"> Buy Tickets </button>
+                    </div>    
+                </div>
+
+                <div class="box-middle">
+                    <div class="hide2"> 
+                        <h2><i> Anime Conventions </i></h2>
+                        <p><i><b> Cosplays, Comic Festival's, Merchandises And More! </b></i></p>
+                        <button class="button"> Check Available Slots </button>
+                        <br/>
+                        <button class="button"> Buy Tickets </button>
+                    </div>    
+                </div>
+
+                <div class="box-right">
+                    <div class="hide3">
+                        <h2><i> Live Music Shows </i></h2>
+                        <p><i><b> Musicians And Bands From All Around The World! </b></i></p>
+                        <button class="button"> Check Available Slots </button>
+                        <br />
+                        <button class="button"> Buy Tickets </button> </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

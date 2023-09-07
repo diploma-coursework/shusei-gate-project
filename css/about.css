@@ -15,7 +15,7 @@ h2 {
 }
 
 footer {
-    display: table;
+    display: inline;
     margin-left: auto;
     margin-right: auto;
     clear: left;

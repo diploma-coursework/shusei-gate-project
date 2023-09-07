@@ -26,6 +26,9 @@ input[type='password'] {
     border: none;
     background: white;
     padding-right: 30%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
 }
 
 label[for='username'],
@@ -62,6 +65,7 @@ label#rem {
     box-shadow: 2px 2px 15px rgba(var(--cyan-rgb), 0.6);
 }
 
+/* Button hover*/
 .cancelbutton:hover {
     background: rgb(233, 87, 87);
     color: white;
@@ -76,6 +80,7 @@ label#rem {
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
 }
 
+/*additional button design*/
 button {
     display: flex;
     gap: 1.5em;
@@ -107,4 +112,6 @@ button:disabled {
 button:disabled {
     filter: brightness(50%);
 }
+
+
 

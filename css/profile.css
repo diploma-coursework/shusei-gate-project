@@ -7,20 +7,23 @@
 
         /* Center the article */
         .pbigbox {
-            margin: 0 auto; /* Set left and right margins to "auto" */
-            width: 50%; /* Adjust the width as needed */
-            text-align: center; /* Center-align the text inside the article */
+            margin: 0; 
+            width: 70%; 
+            text-align: center; 
             height: 20vmin;
             line-height: 30px;
             padding-top: 110px;
-            border: 2px solid #000; /* 2px wide solid black border */
-            padding: 20px; /* Optional padding to create space inside the border */
+            border: 2px solid #000; 
+            /* padding: 20px;  */
         }
 
         .pimg {
             align-items: center;
             gap: 1em;
-           padding:10px, 100px;
+            padding-left: 250px;
+            padding-right: 250px;
+            min-width: 20px;
+            min-height: 20px;
 
     
             & img {

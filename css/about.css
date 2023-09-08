@@ -3,16 +3,8 @@ div.about > h1 {
     animation: glow;
 }
 
-div.paragraph {
-    float:right;
-}
-
-iframe {
-    padding-left: 50%;
-}
-
-h2 {
-    padding-left: 70%;
+p {
+    text-align: center;
 }
 
 footer {

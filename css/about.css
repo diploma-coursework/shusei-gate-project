@@ -1,5 +1,6 @@
 div.about > h1 {
     text-align: center;
+    animation: glow;
 }
 
 div.paragraph {
@@ -20,3 +21,4 @@ footer {
     margin-right: auto;
     clear: left;
 }
+

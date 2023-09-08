@@ -23,12 +23,11 @@ input[type='password'] {
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: none;
     background: white;
     padding-right: 30%;
-    outline: none;
-    border: none;
     border-radius: 5px;
+    background: transparent;
+    border-color: rgb(142, 233, 236);
 }
 
 label[for='username'],

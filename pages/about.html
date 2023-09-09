@@ -45,39 +45,44 @@
 
         <div class="Box">
           <div class="Info">
-            <img src="/assets/headquater.jpg" alt="headquater">
+            <img id="headquater" src="/assets/headquater.jpg" alt="headquater">
             <div class="container">
               <h2>SHUISEI GATE SDN.BHD</h2>
               <p class="title">Our Headquaters</p>
               <p></p>
               <p>First headquater built in Tokyo in 1997</p>
-              <p><button class="Ourlocation">Our Location</button></p>
+              <router-to hrf="#location">
+              <p><button type="button" class="Ourlocation">Our Location</button></p>
+              </route-to>
             </div>
           </div>
         </div>
 
         <div class="Box">
           <div class="Info">
-            <img src="/assets/ticket.gif" type="gif" alt="ticket">
+            <img id="ticket" src="/assets/ticket.gif" type="gif" alt="ticket">
             <div class="container">
               <h2>What we do?</h2>
               <p class="title">We sell tickets for people where they would join an esport event, become a cosplayer! Or join the most famous singer concert in the entire world!</p>
               <p><span style="color:rgb(123, 231, 245);">50% promotion</span> will be implemented from August 31 to September 11!</p>
-              <p>Get the promotion before its too late!</p>
-              <p><button class="button">Sign up now</button></p>
+              <p>Get the promotion before its too late !</p>
+              <route-to href="#signup">
+              <p><button type="button" class="signup">Sign up now</button></p>
+              </route-to>
             </div>
           </div>
         </div>
-
-    </div>
-
-
-
 
         <route-to href="#">
             <button>Back</button>
         </route-to>
 
+    </div>
+
         <hr>
+        <footer>
+          <p>Contact: <a href="04-1234567">04-1234567</a></p>
+          <p>E-mail: <a href="example1234@gmail.com">example1234@gmail.com</a></p>
+        </footer>
 </body>
 

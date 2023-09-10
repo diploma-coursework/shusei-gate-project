@@ -48,7 +48,8 @@
     border-radius: 25px;
     cursor: pointer;
     filter: blur(1px);
-    transition: 0.4s;
+    opacity: 0; /* Hides The Image */
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 /* Middle Box */
@@ -77,7 +78,8 @@
     border-radius: 25px;
     cursor: pointer;
     filter: blur(1px);
-    transition: 0.4s;
+    opacity: 0; /* Hides The Image */
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 /* Right Box */
@@ -107,7 +109,29 @@
     border-radius: 25px;
     cursor: pointer;
     filter: blur(1px);
-    transition: 0.4s;
+    opacity: 0; /* Hides The Image */
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+.box-left:nth-child(1) {
+    animation-delay: 0s; /* Left Image has no delay */
+}
+  
+.box-middle:nth-child(2) {
+    animation-delay: 1s; /* Delays the Middle Image by 1 second */
+}
+  
+.box-right:nth-child(3) {
+    animation-delay: 2s; /* Delays the Right Image 2 seconds */
 }
 
 /* Hide Text */
@@ -150,11 +174,11 @@
     background-color: #101cc7;
     color: #00fff7;
     overflow: hidden;
-  }
+}
   
-  /* Style for footer links */
-  .footer a {
+/* Style for footer links */
+.footer a {
     color: #00fff7;
     text-decoration: none;
     margin: 0 10px;
-  }
+}

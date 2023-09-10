@@ -2,22 +2,59 @@
     <link rel="stylesheet" href="/css/userNavbar.css" />
 </head>
 <body>
-    <h1>Welcome To Shusei Gate</h1>
-    <p>To book the ticket , please select your ticket according to your age and bievenue</p>
-     
-<form>
-    <label for="name">First Name:</label><br>
-    <input type="text" id="name" name="name" required placeholder="Audrey"><br>
+    <!-- For the Navigation Lists On Top -->
+    <div class="navbar">
+        <div class="user-greet">
+            <img src="/assets/generic_user.png" alt="user profile picture" />
+            <h1>Hi, <span class="username"></span>.</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li data-page-redirect="#user-home" class="events-selection nav-selection selected">Events</li>
+                <li data-page-redirect="#cart" class="cart-selection nav-selection">Cart</li>
+                <li data-page-redirect="#my-tickets" class="my-tickets-selection nav-selection">My Tickets</li>
+                <li data-page-redirect="#profile" class="profile-selection nav-selection">Profile</li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="/js/userNavbar.js"></script>
+
+    <!-- Title -->
+    <h1> Book Your Tickets</h1>
+    <p>To book the ticket , please select your ticket according to your category and the event of your choice!</p>
+
+    <h1>Ticket Purchase Form</h1>
+    <form action="ticket.php" method="post">
     
-
-    <label for="name">Last Name :</label><br>
-    <input type="text" id="name" name="name" required placeholder="Lane"> <br>
-
-    <label for="address">Address :</label><br>
-    <input type="text" >
-
-</form>
-    
+      <!-- Ticket Information -->
+      <label for="ticket-type"> Category:</label>
+      <select id="ticket-type" name="ticket-type" required>
+        <option value="standard">Standard</option>
+        <option value="vip">VIP</option>
+        <option value="student">Student</option>
+      </select>
+      <br>
+      <label for="quantity"> Events:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required><br>
+      
   
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required><br>
+      
+      <!-- Payment Information -->
+    <h2>Payment Information</h2>
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" name="card-number" required><br>
 
+    <label for="expiration-date">Expiration Date:</label>
+    <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YYYY" required><br>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" maxlength="3" required><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Purchase Tickets">
+    </form>
 </body>

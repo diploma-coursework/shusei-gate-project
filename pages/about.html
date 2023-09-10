@@ -1,4 +1,5 @@
 <head>
+    <title> About Us </title>
     <link rel="stylesheet" href="/css/about.css" />
 
     <div class="about">
@@ -36,19 +37,39 @@
             making it accessible to even Singaporeans. 
          </p>
     </div>
+    
+    <hr>
 
     <h2>All about<span style="color:rgb(123, 231, 245);"> Shuisei Gate</span></h2>
 
-    <div class="location">
+    <div class="About">
+
         <div class="Box">
           <div class="Info">
-            <img src="/assets/headquater.jpg" alt="Jane" style="width:100%">
+            <img id="headquater" src="/assets/headquater.jpg" alt="headquater">
             <div class="container">
               <h2>SHUISEI GATE SDN.BHD</h2>
               <p class="title">Our Headquaters</p>
               <p></p>
-              <p>jane@example.com</p>
-              <p><button class="button">Contact</button></p>
+              <p>First headquater built in Tokyo in 1997</p>
+              <router-to hrf="#location">
+              <p><button type="button" class="Ourlocation">Our Location</button></p>
+              </route-to>
+            </div>
+          </div>
+        </div>
+
+        <div class="Box">
+          <div class="Info">
+            <img id="ticket" src="/assets/ticket.gif" type="gif" alt="ticket">
+            <div class="container">
+              <h2>What we do?</h2>
+              <p class="title">We sell tickets for people where they would join an esport event, become a cosplayer! Or join the most famous singer concert in the entire world!</p>
+              <p><span style="color:rgb(123, 231, 245);">50% promotion</span> will be implemented from August 31 to September 11!</p>
+              <p>Get the promotion before its too late !</p>
+              <route-to href="#signup">
+              <p><button type="button" class="signup">Sign up now</button></p>
+              </route-to>
             </div>
           </div>
         </div>
@@ -57,6 +78,12 @@
             <button>Back</button>
         </route-to>
 
+    </div>
+
         <hr>
+        <footer>
+          <p>Contact: <a href="04-1234567">04-1234567</a></p>
+          <p>E-mail: <a href="example1234@gmail.com">example1234@gmail.com</a></p>
+        </footer>
 </body>
 

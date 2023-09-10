@@ -1,14 +1,43 @@
-div.about > h1 {
+div.about > h1, p, h2 {
     text-align: center;
-    animation: glow;
 }
 
-p {
-    text-align: center;
+.container::after, .about::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.Box {
+    float: left;
+    width: 48%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+img {
+    width: 100%;
 }
 
 footer {
-    margin-left: auto;
-    margin-right: auto;
+    display: table;
+    text-align: center;
+    margin: 0px auto;
+    
 }
 
+button.Ourlocation {
+
+}
+
+button {
+ 
+}
+
+button:hover {
+  
+}

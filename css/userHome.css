@@ -1,3 +1,4 @@
+/* Title */
 .schedule {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
@@ -20,6 +21,7 @@
     0 0 151px rgb(255, 255, 255);
 }
 
+/* Left Box */
 .box-left {
     display: block;
     background-image: url('/assets/esports.jpg');
@@ -46,9 +48,11 @@
     border-radius: 25px;
     cursor: pointer;
     filter: blur(1px);
-    transition: 0.4s;
+    opacity: 0; /* Hides The Image */
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
+/* Middle Box */
 .box-middle {
     display: inline-block;
     background-image: url('/assets/gojo.jpeg');
@@ -74,9 +78,11 @@
     border-radius: 25px;
     cursor: pointer;
     filter: blur(1px);
-    transition: 0.4s;
+    opacity: 0; /* Hides The Image */
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
+/* Right Box */
 .box-right {
     display: block;
     background-image: url('/assets/walker.jpg');
@@ -103,7 +109,29 @@
     border-radius: 25px;
     cursor: pointer;
     filter: blur(1px);
-    transition: 0.4s;
+    opacity: 0; /* Hides The Image */
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+.box-left:nth-child(1) {
+    animation-delay: 0s; /* Left Image has no delay */
+}
+  
+.box-middle:nth-child(2) {
+    animation-delay: 1s; /* Delays the Middle Image by 1 second */
+}
+  
+.box-right:nth-child(3) {
+    animation-delay: 2s; /* Delays the Right Image 2 seconds */
 }
 
 /* Hide Text */
@@ -138,3 +166,19 @@
 .box-right:hover {
     filter: blur(0);
 }       
+
+/* Style for footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #101cc7;
+    color: #00fff7;
+    overflow: hidden;
+}
+  
+/* Style for footer links */
+.footer a {
+    color: #00fff7;
+    text-decoration: none;
+    margin: 0 10px;
+}

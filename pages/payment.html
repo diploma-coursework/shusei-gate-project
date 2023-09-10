@@ -1,4 +1,58 @@
-<head></head>
+<!DOCTYPE html>
+<head>
+    <link href="/css/payment.css" rel="stylesheet">
 <body>
     <h1>payment page</h1>
+    <h2>Shipping address</h2>
+
+    <div class="details">
+        <p>order details</p>
+    </div>
+
+    <div class="infomation">
+        <label type="firstname">First Name :</label>
+        <input type="text" id="name" name="name" placeholder="Kristen" required></br></br>
+
+        <label type="lastname">Last Name :</label>
+        <input type="text" id="name" name="name" placeholder="Lane" required/></br></br>
+
+        <label type="email"> Email Address :</label>
+        <input type="email" id="email" name="email" placholder="lalisa@gmail.com" required></br></br>
+    </div>
+
+    <div class="payment method">
+        <p>Payment Method</p>
+
+        <input type="radio" id="cashondelivery" name="paymentmethod" value="cashondelivery">
+        <label for="cashondelivery">Cash On Delivery </label><br><br>
+
+        <input type="radio" id="touchngo" name="paymentmethod" value="touchngo">
+        <label for="touchngo">Touch 'n go ewallet </label><br><br>
+          
+        <input type="radio" id="onlinebanking" name="paymentmethod" value="onlinebanking">
+        <label for="online">Online banking </label>
+        <select name="payment" id="type">
+            <option value="Affin Bank">Affin Bank</option>
+            <option value="Maybank">Maybank Bank</option>
+            <option value="Public Bank">Public Bank</option>
+            <option value="Hong Leong Bank">Hong Leong Bank</option>
+            <option value="UOB Bank">UOB Bank</option>
+            <option value="CIMB Bank">CIMB Bank</option>
+            <option value="Standard Charted Bank">Standard Charted Bank</option>
+            <option value="OCBC Bank">OCBC Bank</option>
+        </select><br><br>
+
+        <input type="radio" id="grab" name="paymentmethod" value="grab"/>
+        <label for="grab">GrabPay/Paylater</label>
+    </div>
+    
+    <div class="summary">
+        <h1>ORDER SUMMARY</h1>
+        <p>Subtotal :</p>
+        <p>Shipping fee :</p>
+        <p>Discount :</p>
+        <h5>Grand total :</h5>
+    </div>
+
+    <input type="text" id="">
 </body>

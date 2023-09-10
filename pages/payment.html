@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <head>
     <link href="/css/payment.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-    <h1>payment page</h1>
+    <h1>Payment Page</h1>
     <h2>Shipping address</h2>
 
     <div class="details">
-        <p>order details</p>
+        <p>Order Details</p>
     </div>
 
     <div class="infomation">
-        <label type="firstname">First Name :</label>
-        <input type="text" id="name" name="name" placeholder="Kristen" required></br></br>
+        <label for="firstname">First Name :</label>
+        <input type="text" id="name" name="name" placeholder="Kristen" required/><br><br>
 
-        <label type="lastname">Last Name :</label>
-        <input type="text" id="name" name="name" placeholder="Lane" required/></br></br>
-
-        <label type="email"> Email Address :</label>
-        <input type="email" id="email" name="email" placholder="lalisa@gmail.com" required></br></br>
+        <label for="lastname">Last Name :</label>
+        <input type="text" id="name" name="name" placeholder="Lane" required/><br><br>
+    
+        <label for="email"> Email Address :</label>
+        <input type="email" id="email" name="email" placholder="lalisa@gmail.com" required/><br><br>
     </div>
 
-    <div class="payment method">
+<div class="container">
+    <div class="payment">
         <p>Payment Method</p>
 
         <input type="radio" id="cashondelivery" name="paymentmethod" value="cashondelivery">
@@ -45,14 +47,31 @@
         <input type="radio" id="grab" name="paymentmethod" value="grab"/>
         <label for="grab">GrabPay/Paylater</label>
     </div>
-    
+</div>
+
     <div class="summary">
-        <h1>ORDER SUMMARY</h1>
+        <p>ORDER SUMMARY :</p>
         <p>Subtotal :</p>
         <p>Shipping fee :</p>
         <p>Discount :</p>
-        <h5>Grand total :</h5>
+        <h3>Grand total :</h3>
     </div>
 
-    <input type="text" id="">
+    <button type="submit" form="continue" value="Submit" class="hover-button">CONTINUE TO PAY</button>
+
+    <route to
+
+    <div class="security">
+        <p>SHUSEI is committed to protecting your payment information and only 
+            shares your credit card information with our payment service 
+            providers who agreed to safeguard your information.</p>
+
+        <p> SHUSEI respects the privacy of users and visitors on our site, and we are committed
+             to protecting it through maintaining industry-standard physical, technical, and 
+             administrative measures designed to guard your personal data from unauthorized processing, 
+             use or disclosure.</p>
+    </div>
+
+    <script src="payment.js"></script>
 </body>
+   

@@ -9,6 +9,7 @@
     <br/>
     <br/>
 
+
     <div class="container">
         <form action="process_contact.php" method="post">
             <label for="name">Name:</label>
@@ -18,13 +19,23 @@
             <input type="email" id="email" name="email" required>
             
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message" rows="6" required></textarea>
+           <div class="button">
+
+    <!--Redirect user back to event page-->
+    <route-to href="#user-home"><button type="button"> Back to Previous Page </button></route-to>
+
+    <button type="reset"> Clear </button>
+    <button type="submit"> Submit </button>
+
+            </div>
             
-            <button type="submit">Submit</button>
         </form>
     </div>
+    
+
     <div class="footer">
-        &copy; 2023 Shusei Gate Group | <a href="#">Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+        &copy; 2023 Shusei Gate Group | <a href="#">Home</a> | <a href="#about">About Us</a> 
     </div> 
 </body>
 </html>

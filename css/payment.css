@@ -1,7 +1,71 @@
 h1{
     text-align: center;
+    font-size: 70px;
+}
+
+
+.details{
+
+
+}
+
+.information{
+    text-align:leftt;
+    background-color:green;
+    width:300px;
+    border:2px solid black;
+    border-radius:30px;
+}
+
+.payment{
+    background-color:whitesmoke;
+    width:310px;
+    height:210px;
+    border:2px solid lightgrey;
+    border-radius:30px;
+    color:lightpink;
+    top:left;
+}
+
+.payment p{
+    text-align:center;
 }
 
 .summary{
-    text-align: right;
+    text-align:left;
+    background-color: blanchedalmond;
+}
+
+div.summary{
+    position:absolute;
+    top:100px;
+    right:0px;
+    width:150px;
+    height:90px;
+    border:3px solid whitesmoke;
+    border-radius: 30px;
+    padding:100px;
+}
+
+.summary p{
+   
+}
+
+.security{
+    text-align:center;
+    width:600px;
+    background-color:pink;
+
+}
+
+div.security{
+    position:absolute;
+    top:100px;
+    right:0px;
+    height:100px;
+    width:100px;
+}
+
+.button{
+    
 }

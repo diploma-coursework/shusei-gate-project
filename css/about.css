@@ -32,12 +32,14 @@ img#headquater, img#ticket {
 
 /*Footer*/
 footer {
-    margin-right: 8%;
+    margin-left: 1%;
 }
 
-a {
+a.contact {
     text-decoration: none;
     color: inherit;
+    margin-left: 38%;
+    margin-top: 40px; 
 }
 
 /*button*/

@@ -1,0 +1,14 @@
+
+
+.faqArticles {
+
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: grey;
+}
+
+article.faqArticle{
+    text-align: center;
+}

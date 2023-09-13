@@ -1,14 +1,28 @@
 
 
-.faqArticles {
+body {
+    height: 100%;
+}
+.faqArticle {
 
     width: 80%;
     margin: 0 auto;
     border: 3px solid black;
     padding: 10px;
-    background-color: grey;
+    background-color: rgb(222, 219, 219);
+    text-align: center;
 }
 
-article.faqArticle{
-    text-align: center;
+.questions{
+    text-align: justify;
+    padding-left: 80px;
+
+    display: block;
+}
+
+.innerarticle {
+    border: 3px solid grey;
+    width: 80%;
+    background-color: aqua;
+    padding: 10px;
 }

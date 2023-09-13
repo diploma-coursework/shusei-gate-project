@@ -4,73 +4,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <h1>Payment Page</h1>
-    <h2>Shipping address</h2>
 
-    <div class="details">
-        <p>Order Details</p>
-    </div>
-
-    <div class="infomation">
-        <label for="firstname">First Name :</label>
-        <input type="text" id="name" name="name" placeholder="Kristen" required/><br><br>
-
-        <label for="lastname">Last Name :</label>
-        <input type="text" id="name" name="name" placeholder="Lane" required/><br><br>
+   
+        <div class="container">
+            <div class="left">
+                <h2>BILLING INFORMATION</h2>
+                <form>
+                <label for="firstname">First Name :</label>
+                <input type="text" name="" placeholder="Kristen" required/><br><br>
     
-        <label for="email"> Email Address :</label>
-        <input type="email" id="email" name="email" placholder="lalisa@gmail.com" required/><br><br>
-    </div>
+                <label for="lastname">Last Name :</label>
+                <input type="text" name="" placeholder="Lane" required/><br><br>
+        
+                <label for="email"> Email Address :</label>
+                <input type="text" name="" placeholder="lalisa@gmail.com" required/><br><br>
+                
+                <label for="address">Address:</label>
+                <input type="text" name="" placeholder="123,Jalan TARUC 11300 PENANG" required/><br><br>
 
-<div class="container">
-    <div class="payment">
-        <p>Payment Method</p>
+                <label for="city">City :</label>
+                <input type="text" name="" placeholder="Butterworth" required/><br><br>
 
-        <input type="radio" id="cashondelivery" name="paymentmethod" value="cashondelivery">
-        <label for="cashondelivery">Cash On Delivery </label><br><br>
+                <div id="zipcode">
+                    <label>
+                    State
+                    <select>
+                        <option>Penang</option>
+                        <option>Kuala Lumpur</option>
+                        <option>Perak</option>
+                        <option>Ipoh</option>
+                        <option>Kedah</option>
+                        <option>Johor</option>
+                        <option>Sarawak</option>
+                        <option>Sabah</option>
+                    </select>
+                </label>
+                <label>
+                    <input type="number" name="" placeholder="11600" required/>
+                </label>
 
-        <input type="radio" id="touchngo" name="paymentmethod" value="touchngo">
-        <label for="touchngo">Touch 'n go ewallet </label><br><br>
+                </div>
+                   
+                
+                </div>
+            </form>
+        </div>
+                
+   
+                <div class="right">
+                    <h3>Payment Method</h3>
+
+                <label for="number">Credit Card Number :</label>
+                <input type="text" name="" placeholder="Enter card number" required/>
+    
+                <label for="month">Exp Month :</label>
+                <input type="text" name="" placeholder="Enter number" required/><br><br>
+    
+                <label for="number">Exp Year:</label>
+                <input type="text" name="" placeholder="Enter card number" required/><br><br>
+    
+                <label for="number">CVV:</label>
+                <select name="payment" id="type">
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+    
+            
+            </div>
           
-        <input type="radio" id="onlinebanking" name="paymentmethod" value="onlinebanking">
-        <label for="online">Online banking </label>
-        <select name="payment" id="type">
-            <option value="Affin Bank">Affin Bank</option>
-            <option value="Maybank">Maybank Bank</option>
-            <option value="Public Bank">Public Bank</option>
-            <option value="Hong Leong Bank">Hong Leong Bank</option>
-            <option value="UOB Bank">UOB Bank</option>
-            <option value="CIMB Bank">CIMB Bank</option>
-            <option value="Standard Charted Bank">Standard Charted Bank</option>
-            <option value="OCBC Bank">OCBC Bank</option>
-        </select><br><br>
+            </div>
+        </form>
+        </div>
 
-        <input type="radio" id="grab" name="paymentmethod" value="grab"/>
-        <label for="grab">GrabPay/Paylater</label>
-    </div>
-</div>
+ 
+   
+   
 
-    <div class="summary">
-        <p>ORDER SUMMARY :</p>
-        <p>Subtotal :</p>
-        <p>Shipping fee :</p>
-        <p>Discount :</p>
-        <h3>Grand total :</h3>
-    </div>
-
-    <button type="submit" form="continue" value="Submit" class="hover-button">CONTINUE TO PAY</button>
-
-    <route to
-
-    <div class="security">
-        <p>SHUSEI is committed to protecting your payment information and only 
-            shares your credit card information with our payment service 
-            providers who agreed to safeguard your information.</p>
-
-        <p> SHUSEI respects the privacy of users and visitors on our site, and we are committed
-             to protecting it through maintaining industry-standard physical, technical, and 
-             administrative measures designed to guard your personal data from unauthorized processing, 
-             use or disclosure.</p>
-    </div>
 
     <script src="payment.js"></script>
 </body>

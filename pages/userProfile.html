@@ -5,7 +5,7 @@
 <body>
   <div class="navbar">
     <div class="user-greet">
-      <img src="/assets/generic_user.png" alt="" />
+      <img src="/assets/generic_user.png" alt="userProfile" />
       <h1>Hi, <span class="username"></span>.</h1>
     </div>
 
@@ -35,13 +35,15 @@
   <script src="/js/userNavbar.js"></script>
   <script src="/js/userProfile.js"></script>
 
-  <div class="Userimg">
-    <img alt="">
-   <form action="userProfile.html" method="post">
-    <input type="file" name="image" id="image">
-    <label for="image">Select an image</label>
-   </form>
-   <script type="Image_upload" src="/js/user_image.js"></script>
+  <div class="profilePic">
+   <img alt="User_profile" src="/assets/generic_user.png" id="profileImage" height="200">
+   <div class="input">
+    <input type="file" name="image" id="imageUpload" onchange="file()">
+    <div class="label">
+     <label for="image">Select an image</label>
+      <script type="Image_upload" src="/js/user_image.js"></script>
+    </div>
+   </div>
   </div>
 
   <div class="table">
@@ -69,12 +71,10 @@
 
     </table>
   </div>
-
-  <p>Check for offers!</p>
-  
 </body>
+
 <footer>
 <div class="footer">
     &copy; 2023 Shusei Gate Group | <a href="#">Home</a> | <a href="#about">About Us</a> | <a href="#contact">Contact Us</a>
   </div>
-  </footer>
+</footer>

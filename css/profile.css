@@ -28,7 +28,6 @@
 .footer {
     text-align: center;
     padding: 15px;
-    background-color: #101cc7;
     color: #00fff7;
     overflow: hidden;
     position: absolute;
@@ -44,8 +43,10 @@
     margin: 0 10px;
 }
 
-div.Userimg, div.table {
+div.profilePic, div.table {
+    width: 50%;
     float: left;
+    min-height: 70%;
 }
 
    

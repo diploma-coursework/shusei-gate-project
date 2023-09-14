@@ -1,39 +1,40 @@
 h1{
     text-align: center;
     font-size: 70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-
-.details{
-
-
-}
-
-.information{
-    text-align:leftt;
-    background-color:green;
-    width:300px;
-    border:2px solid black;
-    border-radius:30px;
-}
-
-.payment{
-    background-color:whitesmoke;
-    width:310px;
-    height:210px;
-    border:2px solid lightgrey;
-    border-radius:30px;
-    color:lightpink;
+.container{
+    width:900px;
+    height:500px;
     top:left;
+    flex-basis:50%;
+    justify-content:center;
+    align-items: center;
+    background-color:bisque;
 }
 
-.payment p{
+.container p{
     text-align:center;
 }
+.left{
+    flex-basis:50%;
+}
+.right{
+    flex-basis:50%;
+}
 
+form input[type="text"]{
+    width:150px;
+    padding:0.5rem 0.7rem;
+    margin:0.5rem 0;
+    outline:none;
+}
 .summary{
     text-align:left;
-    background-color: blanchedalmond;
+
 }
 
 div.summary{
@@ -47,8 +48,9 @@ div.summary{
     padding:100px;
 }
 
-.summary p{
-   
+h3{
+    margin-top: 1rem;
+    color:darksalmon;
 }
 
 .security{

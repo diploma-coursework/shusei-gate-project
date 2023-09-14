@@ -1,0 +1,13 @@
+.button1{
+    background-color:aqua;
+    color:white;
+    border-radius: 2px;
+    padding:10px 20px;
+    font-size:20px;
+    cursor:pointer;
+    text-align:center;
+}
+
+.button1:hover{
+    background-color:aquamarine;
+}

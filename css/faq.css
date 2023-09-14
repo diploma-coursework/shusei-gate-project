@@ -13,7 +13,7 @@ body {
     text-align: center;
 }
 
-.questions{
+.question{
     text-align: justify;
     padding-left: 80px;
 
@@ -25,4 +25,8 @@ body {
     width: 80%;
     background-color: aqua;
     padding: 10px;
+}
+
+.hidden {
+    display: none;
 }

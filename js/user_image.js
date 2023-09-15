@@ -1,6 +1,18 @@
-const image = document.querySelector('img');
-const input = document.querySelector('input');
-
-input.addEvenetListener('change', (e) => {
-    image.src = URL.createObjectURL(e.target.files[0]);
-});
+function file() {
+    var preview = document.querySelector('img');
+    var file    = document.querySelector('input[type=file]').files[0];
+    var reader  = new FileReader();
+  
+    reader.addEventListener("load", function () {
+      preview.src = reader.result;
+    }, false);
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  }
+                        $(function() {
+              $('#profile-image1').on('click', function() {
+                  $('#profile-image-upload').click();
+              });
+          });

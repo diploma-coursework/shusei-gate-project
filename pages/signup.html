@@ -17,11 +17,11 @@
                
                 <!--email-->
                  <label for="email"><b>Email:</b></label>
-                 <input type="email" placeholder="Example1234@gmail.com" maxlength="30" name="email" required checked/>
+                 <input type="email" placeholder="Example1234@gmail.com" maxlength="30" name="email" id="email" required checked/>
                 
                 <!--password-->
                  <label for="password"><b>Password:</b></label>
-                 <input type="password" id="user_Input" placeholder="Enter your password" maxlength="10" name="password" required checked/>
+                 <input type="password" placeholder="Enter your password" maxlength="10" name="password" id="user_Input" required checked/>
               
                 <!--Check validity of password-->
                 <div class="showpass-checkbox">
@@ -49,10 +49,11 @@
                     <route-to href="#login"><button type="button" class="cancelbutton">Cancel</button></route-to>
 
                     <!--store user signup data and direct to homepage-->
-                    <button type="submit" class="signupbutton">Sign Up</button>
+                    <button type="submit" class="signupbutton" onlick="display_function()">Sign Up</button>
                 </div>
             </div>
         </form>
     </div>
     <script type="module" src="/js/signup.js"></script>
+    <script src="/js/User_Info.js"></script>
 </body>

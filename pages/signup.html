@@ -1,13 +1,14 @@
 <head>
     <link rel="stylesheet" href="/css/signup.css" />
+    <script src="/js/User_localStorage.js"></script>
 </head>
 <body>
     <div id="idsignup" class="signup">
         <h1>Sign Up platform</h1>
-        <hr />
+        <hr/>
 
         <!--Create a signup platform-->
-        <form class="Information">
+        <form class="Information" action="userProfile.html" method="get">
             <div class="container">
                 <p class="form-error-msg">Please fill up all the informations to create an account</p>
 
@@ -42,18 +43,17 @@
                 </p>
 
                 <!--checkbox for agree of terms and conditions-->
-                <label id="agr"><input type="checkbox" class="agreechk" checked name="agree" />Agree</label>
+                <label id="agr"><input type="checkbox" class="agreechk" checked name="agree"/>Agree</label>
 
                 <div class="btn-container">
                     <!--Redirect user back to homepage-->
                     <route-to href="#login"><button type="button" class="cancelbutton">Cancel</button></route-to>
 
                     <!--store user signup data and direct to homepage-->
-                    <button type="submit" class="signupbutton" onlick="display_function()">Sign Up</button>
+                    <button type="submit" value="submit" class="signupbutton" onclick="data_function()">Sign Up</button>
                 </div>
             </div>
         </form>
     </div>
     <script type="module" src="/js/signup.js"></script>
-    <script src="/js/User_Info.js"></script>
 </body>

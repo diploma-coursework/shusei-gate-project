@@ -37,7 +37,7 @@
      <img src="/assets/generic_user.png" alt="userProfile" />
     </div>
    <div class="input">
-    <input type="file" name="image" id="imageUpload" onchange="file()">
+    <input type="file" name="image" id="imageUpload" onchange="uploadfile()">
     <div class="label">
      <label for="image">Select an image</label>
       <script type="Image_upload" src="/js/user_image.js"></script>
@@ -45,22 +45,22 @@
    </div>
   </div>
   <div class="UserInfo">
-    <script src="/assets/User_Info.js"></script>
+
     <table>
       <tr>
         <th>Username:</th>
         <th>:</th>
-        <td><input type="text" placeholder=" Enter your username (maximum length 20) " maxlength="20" name="username" id="username" width="230px" required checked/></td>
+        <td><input type="text" placeholder=" Enter your username (maximum length 20) " maxlength="20" name="username" id="username2" width="230px" required checked/></td>
       </tr>
       <tr>
         <th id="displayEmail">Email</th>
         <th>:</th>
-        <td><input type="email" placeholder="Example1234@gmail.com" maxlength="30" name="email" id="email" required checked/></td>
+        <td><input type="email" placeholder="Example1234@gmail.com" maxlength="30" name="email" id="email2" required checked/></td>
       </tr>
       <tr>
         <th id="displayPassword">Password:</th>
         <th>:</th>
-        <td> <input type="password" placeholder="Enter your password" maxlength="10" name="password" id="user_Input" required checked/><input type="checkbox" onclick="showpassFunction()"/>Show password</input></td>
+        <td><input type="password" placeholder="Enter your password" maxlength="10" name="password" id="user_Input" required checked/><input type="checkbox" onclick="showpassFunction()"/>Show password</input></td>
       </tr>
       <tr>
         <th id="displayDate">Member since</th>
@@ -78,26 +78,29 @@
         <td></td>
       </tr>
     </table>
+
+   <script src="/js/userProfile.js"></script>
+
     <div class="textarea">
       <fieldset id="UserProfile" width="80%">
         <legend>About yourself</legend>
-        <textarea id="aboutyourself" name="aboutyourself" placeholder="Type something to describe yourself"></textarea>
-        <label for="aboutyourself">Delivery Time(leave blank for earliest delivery)</label>
+        <textarea id="aboutyourself" name="aboutyourself" placeholder="Type something to describe yourself (optional)"></textarea>
+        <label for="aboutyourself">Let us know you better!</label>
     </fieldset>
     </div>
+
   </div>
   <div class="button">
   <route-to href="#user-home">
     <button class="back">Back</button>
    </route-to>
-  <input type="Button" class="btn btn-info" value="Update Profile">  
+  <button type="submit" class="updateProfile" value="Update">Update profile</button> 
   </div>
   <script src="/js/togglePasswordVisi.js"></script>
 </body>
 
 <footer>
-<div class="footer">
+  <div class="footer">
     &copy; 2023 Shusei Gate Group | <a href="#">Home</a> | <a href="#about">About Us</a> | <a href="#contact">Contact Us</a>
   </div>
-  
 </footer>

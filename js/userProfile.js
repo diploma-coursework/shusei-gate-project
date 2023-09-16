@@ -1,6 +1,5 @@
 
 var usernameInput = document.getElementById("username");
-
 var displayUsername = document.getElementById("displayUsername");
 
 usernameInput.addEventListener("input", function() {

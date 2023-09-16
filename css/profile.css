@@ -33,7 +33,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    margin-top: 25%;
+    margin-top: 15%;
 }
   
 /* Style for footer links */
@@ -55,6 +55,7 @@ img {
    width: 150px;
    border-radius: 40%;
    border: 2px solid black;
+   margin-top: 25px;
 }
 
 div.input, div.label {
@@ -64,6 +65,7 @@ div.input, div.label {
 input#imageUpload {
     padding-left: 14.5%;
     padding-bottom: 10px;
+    padding-top: 15px;
 }
 
 div.image {
@@ -86,6 +88,73 @@ fieldset {
 }
 
 textarea {
-    width: 60%;
+    width: 100%;
+    min-height: 200px;
     margin: 0 auto;
+}
+
+input[type='text'],input[type='email'],input[type='password'],textarea {
+    background: transparent;
+    color: white;
+}
+
+input[type='text'],input[type='email'],input[type='password'] {
+    border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder  {
+    color: rgb(158, 154, 154);
+}
+
+button {
+    display: flex;
+    gap: 1.5em;
+    float: left;
+
+}
+
+button {
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 0.3em;
+    padding: 0.4em 0.7em;
+    background: none;
+    margin-top: 1em;
+    cursor: pointer;
+    transition-property: background, color, border, box-shadow;
+    transition-duration: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button.back {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 70%;
+    border: 2px solid var(--cyan);
+    color: var(--cyan);
+    box-shadow: 2px 2px 15px rgba(var(--cyan-rgb), 0.6);
+}
+
+button.updateProfile {
+    margin-top: 50px;
+    border: 2px solid rgb(188, 221, 69);
+    color:rgb(212, 219, 149);
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+}
+
+button.back:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid white;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+}
+
+button.updateProfile:hover {
+    background: rgb(139, 194, 143);
+    color: rgb(60, 167, 69);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
 }

@@ -37,7 +37,7 @@
      <img src="/assets/generic_user.png" alt="userProfile" />
     </div>
    <div class="input">
-    <input type="file" name="image" id="imageUpload">
+    <input type="file" name="image" id="imageUpload" onchange="file()">
     <div class="label">
      <label for="image">Select an image</label>
       <script type="Image_upload" src="/js/user_image.js"></script>
@@ -50,17 +50,17 @@
       <tr>
         <th>Username:</th>
         <th>:</th>
-        <td><input type="text" placeholder=" Enter your username (maximum length 20) " maxlength="20" name="username" id="username1" width="230px" required checked/></td>
+        <td><input type="text" placeholder=" Enter your username (maximum length 20) " maxlength="20" name="username" id="username" width="230px" required checked/></td>
       </tr>
       <tr>
         <th id="displayEmail">Email</th>
         <th>:</th>
-        <td><input type="email" placeholder="Example1234@gmail.com" maxlength="30" name="email" id="email1" required checked/></td>
+        <td><input type="email" placeholder="Example1234@gmail.com" maxlength="30" name="email" id="email" required checked/></td>
       </tr>
       <tr>
         <th id="displayPassword">Password:</th>
         <th>:</th>
-        <td></td>
+        <td> <input type="password" placeholder="Enter your password" maxlength="10" name="password" id="user_Input" required checked/><input type="checkbox" onclick="showpassFunction()"/>Show password</input></td>
       </tr>
       <tr>
         <th id="displayDate">Member since</th>
@@ -79,10 +79,11 @@
       </tr>
     </table>
     <div class="textarea">
-      <h2>About yourself</h2>
-      <textarea>
-
-      </textarea>
+      <fieldset id="UserProfile" width="80%">
+        <legend>About yourself</legend>
+        <textarea id="aboutyourself" name="aboutyourself" placeholder="Type something to describe yourself"></textarea>
+        <label for="aboutyourself">Delivery Time(leave blank for earliest delivery)</label>
+    </fieldset>
     </div>
   </div>
   <div class="button">
@@ -91,6 +92,7 @@
    </route-to>
   <input type="Button" class="btn btn-info" value="Update Profile">  
   </div>
+  <script src="/js/togglePasswordVisi.js"></script>
 </body>
 
 <footer>

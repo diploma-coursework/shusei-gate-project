@@ -1,19 +1,24 @@
 
 
-body {
-    /* height: 100%; */
+body nav{
     display: flex;
     align-items: flex-start;
 }
+
+body .innerarticle {
+    display: flex;
+    /* align-items: flex-start; */
+}
+
 .faqArticle {
 
-    width: 80%;
-    /* margin: 0 auto; */
+    width: 70%;
     border: 3px solid black;
     padding: 10px;
     background-color: rgb(222, 219, 219);
     text-align: center;
-    flex: 1;
+    /* flex: 1;
+    order: 1; */
 }
 
 .question{
@@ -30,6 +35,8 @@ body {
     align-items: stretch;
     padding: 10px;
     margin-right: 0;
+    flex: 1;
+    order: 1;
 }
 
 .hidden {
@@ -37,7 +44,19 @@ body {
 }
 
 nav {
-    flex: 0 0 200px;
+    flex: auto;
     align-items: stretch;
     background-color: pink;
+    order: 2;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    color: #00fff7;
+    overflow: hidden;
+    position: bottom;
+    /* display: flex; */
+    width: 100%;
+    /* margin-top: 15%; */
 }

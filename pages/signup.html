@@ -1,14 +1,13 @@
 <head>
     <link rel="stylesheet" href="/css/signup.css" />
-    <script src="/js/User_localStorage.js"></script>
 </head>
 <body>
-    <div id="idsignup" class="signup">
+    <div id="idsignup" class="signup" action="profile.html" method="post">
         <h1>Sign Up platform</h1>
         <hr/>
 
         <!--Create a signup platform-->
-        <form class="Information" action="userProfile.html" method="get">
+        <form class="Information" action="userProfile.html" method="post" id="form">
             <div class="container">
                 <p class="form-error-msg">Please fill up all the informations to create an account</p>
 
@@ -34,7 +33,7 @@
                 <!--Terms and Conditions-->
                 <p>
                     By creating an account you agree to our
-                    <a href="https://www.example.com/shusei-gate-tnc" target="_blank" style="color: dodgerblue"
+                    <a href="#privacypolicy" target="_blank" style="color: dodgerblue"
                         >Terms & Privacy
                     </a>
                     <!-- 
@@ -50,10 +49,11 @@
                     <route-to href="#login"><button type="button" class="cancelbutton">Cancel</button></route-to>
 
                     <!--store user signup data and direct to homepage-->
-                    <button type="submit" value="submit" class="signupbutton" onclick="data_function()">Sign Up</button>
+                    <button type="submit" class="signupbutton" id="getvalue">Sign Up</button>
                 </div>
             </div>
         </form>
     </div>
+    <script src="/js/userProfile.js"></script>
     <script type="module" src="/js/signup.js"></script>
 </body>

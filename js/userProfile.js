@@ -43,3 +43,14 @@ document.querySelector('button.updateProfile').addEventListener('click', async (
     }
     alert('Failed to update.');
 });
+
+/**
+ * logout button event
+ */
+document.querySelector('button.logout-btn').addEventListener('click', () => {
+    const confirmLogout = confirm('Do you want to log out?');
+    if (confirmLogout) {
+        ShuSeiGateAPI.logoutUser();
+        window.location.hash = '';
+    }
+});

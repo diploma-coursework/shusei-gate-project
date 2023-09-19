@@ -32,7 +32,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 3em;
 }
 
 /* Style for footer links */
@@ -164,4 +164,21 @@ button.updateProfile:hover {
     color: rgb(60, 167, 69);
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+}
+
+.logout-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7em;
+
+    & button.logout-btn {
+        background: var(--pink-dark);
+        border: 1px solid white;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: translateY(-0.4em);
+        }
+    }
 }

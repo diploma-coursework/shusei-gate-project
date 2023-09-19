@@ -1,25 +1,27 @@
 <html>
-<head>
-    <link rel="stylesheet" href="/css/userNavbar.css" />
-</head>
-<body>
-    <!-- For the Navigation Lists On Top -->
-    <div class="navbar">
-        <div class="user-greet">
-            <img src="/assets/generic_user.png" alt="user profile picture" />
-            <h1>Hi, <span class="username"></span>.</h1>
+    <head>
+        <link rel="stylesheet" href="/css/userNavbar.css" />
+    </head>
+    <body>
+        <!-- For the Navigation Lists On Top -->
+        <div class="navbar">
+            <div class="user-greet">
+                <img src="/assets/generic_user.png" alt="user profile picture" />
+                <h1>Hi, <span class="username"></span>.</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li data-page-redirect="#user-home" class="events-selection nav-selection">Events</li>
+                    <li data-page-redirect="#cart" class="cart-selection nav-selection">Cart</li>
+                    <li data-page-redirect="#my-tickets" class="my-tickets-selection nav-selection selected">
+                        My Tickets
+                    </li>
+                    <li data-page-redirect="#profile" class="profile-selection nav-selection">Profile</li>
+                </ul>
+            </nav>
         </div>
 
-        <nav>
-            <ul>
-                <li data-page-redirect="#user-home" class="events-selection nav-selection selected">Events</li>
-                <li data-page-redirect="#cart" class="cart-selection nav-selection">Cart</li>
-                <li data-page-redirect="#my-tickets" class="my-tickets-selection nav-selection">My Tickets</li>
-                <li data-page-redirect="#profile" class="profile-selection nav-selection">Profile</li>
-            </ul>
-        </nav>
-    </div>
-
-    <script src="/js/userNavbar.js"></script>
-</body>
+        <script src="/js/userNavbar.js"></script>
+    </body>
 </html>

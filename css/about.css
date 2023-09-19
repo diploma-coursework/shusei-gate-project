@@ -1,11 +1,14 @@
 /* text */
-div.about > h1, p, h2 {
+div.about > h1,
+p,
+h2 {
     text-align: center;
 }
 
 /* the div element design */
-.container::after, .about::after {
-    content: "";
+.container::after,
+.about::after {
+    content: '';
     clear: both;
     display: table;
 }
@@ -21,9 +24,10 @@ div.about > h1, p, h2 {
 }
 
 /*Image*/
-img#headquater, img#ticket {
+img#headquater,
+img#ticket {
     width: 50%;
-    height:50%;
+    height: 50%;
     display: flex;
     align-items: center;
     vertical-align: center;
@@ -42,7 +46,8 @@ div.footeritem {
     margin-top: 120px;
     position: absolute;
     display: block;
-    padding-left: 34%;
+    left: 0;
+    right: 0;
 }
 /* Style for footer links */
 .footer a {
@@ -52,13 +57,11 @@ div.footeritem {
     margin-top: 100px;
 }
 
-
 /*button*/
 button.location {
     border: 2px solid var(--pink-dark);
     color: var(--pink-dark);
     box-shadow: 2px 2px 15px rgba(var(--pink-dark-rgb), 0.6);
-   
 }
 
 button.signup {
@@ -69,7 +72,7 @@ button.signup {
 
 button.back {
     border: 2px solid rgb(71, 216, 103);
-    color:rgb(157, 233, 174);
+    color: rgb(157, 233, 174);
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
 }
 
@@ -89,10 +92,10 @@ button.signup:hover {
 }
 
 button.back:hover {
-  background: rgb(255, 255, 255);
-  color: black;
-  border: 2px solid white;
-  box-shadow: 2px 2px 15px  rgba(255, 255, 255, 0.6);
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid white;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
 }
 
 button {
@@ -116,8 +119,9 @@ button {
     align-items: center;
 }
 
-button.location, button.signup {
-    margin:0px auto;
+button.location,
+button.signup {
+    margin: 0px auto;
     margin-left: 220px;
 }
 
@@ -125,7 +129,6 @@ button.location {
     margin-top: 15px;
 }
 
-
 button:disabled {
     filter: brightness(50%);
 }
@@ -134,3 +137,20 @@ button:disabled {
     filter: brightness(50%);
 }
 
+.location-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 4em;
+
+    & iframe {
+        width: 90%;
+        height: 18em;
+        border-radius: 0.4em;
+    }
+}
+
+.back-btn-wrapper {
+    display: block;
+    padding: 3em 5em 1em;
+}

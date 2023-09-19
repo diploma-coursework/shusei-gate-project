@@ -84,7 +84,7 @@
     cursor: pointer;
     filter: blur(1px);
     opacity: 0; /* Hides The Image */
-    animation: 2s fadeIn 1s ease-in-out forwards;
+    animation: 2s fadeIn 1.6s ease-in-out forwards;
 }
 
 @keyframes fadeIn {

@@ -7,17 +7,24 @@ let account_email;
  */
 document.cookie.split('; ').forEach((cookie) => {
     if (cookie.startsWith('session=')) {
+        // email
         account_email = cookie.split('=')[1];
         document.querySelector('td.displayProfileEmail').textContent = account_email;
         return;
     }
 
     if (cookie.startsWith('username=')) {
-        document.querySelector('input#username').value = cookie.split('=')[1];
+        // username
+        document.querySelector('td.displayProfileUsername').textContent = cookie.split('=')[1];
         return;
     }
 });
 const userInfo = await ShuSeiGateAPI.getUserInfo(account_email);
+// member since
+document.querySelector('td.displayProfileMemberSince').textContent = new Date(
+    userInfo.member_since
+).toLocaleDateString();
+// bio
 document.querySelector('textarea#aboutyourself').value = userInfo.bio.length ? userInfo.bio : '';
 
 /**

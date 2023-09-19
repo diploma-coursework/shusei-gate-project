@@ -37,16 +37,16 @@
                         <option>Johor</option>
                         <option>Sarawak</option>
                         <option>Sabah</option>
-                    </select>
+                    </select><br><br>
                 </label>
+
                 <label>
-                    <input type="number" name="" placeholder="11600" required/>
+                    <label for="postcode">Postcode :</label>
+                    <input type="text" name="" placeholder="11600" required/>
                 </label>
 
                 </div>
                    
-                
-                </div>
             </form>
         </div>
                 
@@ -54,8 +54,9 @@
                 <div class="right">
                     <h3>Payment Method</h3>
 
+             <form>
                 <label for="number">Credit Card Number :</label>
-                <input type="text" name="" placeholder="Enter card number" required/>
+                <input type="text" name="" placeholder="Enter card number" required/><br><br>
     
                 <label for="month">Exp Month :</label>
                 <input type="text" name="" placeholder="Enter number" required/><br><br>
@@ -70,19 +71,37 @@
                     <option value="2025">2025</option>
                     <option value="2026">2026</option>
                 </select>
-    
-            
-            </div>
-          
-            </div>
-        </form>
+
+                <h3>Online bankings</h3>
+
+                <input type="radio" name="onlinebanking"/>
+                <label for="tng">Touch N' Go</label>
+                <div>
+                    <img id="img" src="" alt="tng"/>
+                </div>
+                <button type="button" onclick="show()" id="btnID">
+                    Click Here To Scan
+                </button>
+                <script>
+                    function show(){
+                        document.getElementById('img').style.display="block";
+                        document.getElementById('btnID').style.display="none";
+                    }
+                </script><br><br>
+
+                <input type="radio" name="onlinebanking" name="grab"/>
+                <label for="grab">Grab Pay </label>
+
+                <input type="radio" name="onlinebanking" name="bank"/>
+                <label for="bank">Bank Transfer ( Duit Now) </label><br><br>
+
+                <button class="button button1">SUBMIT</button>
+                
+             </form>
+        </div>
         </div>
 
- 
-   
-   
-
-
+       
     <script src="payment.js"></script>
 </body>
    

@@ -51,6 +51,66 @@ div.textval {
     0 0 151px rgb(0, 0, 0);
 }
 
+h1.title1 {
+    font-size: 45px;
+    color: #ff0000;
+    text-align: center;
+    line-height: 1.9em;
+    background-image: url("/assets/");
+    background-position: 55% 60%;
+    background-size: cover;
+    height: 80px;
+    margin: 0px 0px 30px 0px;
+    padding-top: 10px;
+    text-shadow:
+    /* black glow */ 
+    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0),
+    0 0 151px rgb(255, 255, 255);
+}
+
+div.eventcsgo {
+    position: relative;
+    text-align: center;
+}
+
+.bordered {
+    display: inline-block; /* Ensures that the border fits snugly around the image */
+    border: 7px solid #851111;
+    padding: 0; /* Remove any default padding or margin */
+    border-width: 7px;
+}   
+
+div.textcsgo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: aqua;
+    text-shadow:
+    /* black glow */ 
+    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0),
+    0 0 151px rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -60,8 +120,8 @@ div.textval {
 
 
 h1 {
-    background-color: #333;
-    color: #fff;
+    background-color: #262b89;
+    color: #ff00ee;
     padding: 20px;
     text-align: center;
 }

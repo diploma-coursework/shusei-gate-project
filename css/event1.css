@@ -11,20 +11,19 @@ h1.title {
     color: #ff0000;
     text-align: center;
     line-height: 1.9em;
-    background-image: url("/assets/valbanner.jpeg");
+    background-image: url('/assets/valbanner.jpeg');
     background-position: center;
     background-size: cover;
     height: 80px;
     margin: 0px 0px 30px 0px;
     padding-top: 10px;
     text-shadow:
-    /* black glow */ 
-    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0),
-    0 0 151px rgb(255, 255, 255);
+    /* black glow */ 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+        0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
 }
 
-div.eventval {
+div.eventval,
+.eventcsgo {
     position: relative;
     text-align: center;
 }
@@ -34,7 +33,7 @@ div.eventval {
     border: 7px solid #851111;
     padding: 0; /* Remove any default padding or margin */
     border-width: 7px;
-}   
+}
 
 div.textval {
     position: absolute;
@@ -46,10 +45,8 @@ div.textval {
     font-size: 40px;
     color: aqua;
     text-shadow:
-    /* black glow */ 
-    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0),
-    0 0 151px rgb(0, 0, 0);
+    /* black glow */ 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+        0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
 }
 
 div.val-schedule {
@@ -77,30 +74,21 @@ p.Saturday {
     margin-bottom: 50px;
 }
 
-
-
-
-
-
-
-
 /* For CSGO */
 h1.title1 {
     font-size: 45px;
     color: #1aff00;
     text-align: center;
     line-height: 1.9em;
-    background-image: url("/assets/csgobanner1.jpeg");
+    background-image: url('/assets/csgobanner1.jpeg');
     background-position: 60% 60%;
     background-size: cover;
     height: 80px;
     margin: 0px 0px 30px 0px;
     padding-top: 10px;
     text-shadow:
-    /* black glow */ 
-    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0),
-    0 0 151px rgb(255, 255, 255);
+    /* black glow */ 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+        0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
 }
 
 div.eventcsgo {
@@ -113,7 +101,7 @@ div.eventcsgo {
     border: 7px solid #ffdd00;
     padding: 0; /* Remove any default padding or margin */
     border-width: 7px;
-}   
+}
 
 div.textcsgo {
     position: absolute;
@@ -125,16 +113,9 @@ div.textcsgo {
     font-size: 40px;
     color: rgb(246, 255, 0);
     text-shadow:
-    /* black glow */ 
-    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0),
-    0 0 151px rgb(0, 0, 0);
+    /* black glow */ 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+        0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
 }
-
-
 
 p {
- 
 }
-
-

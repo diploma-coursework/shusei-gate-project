@@ -10,16 +10,16 @@ h1.title {
     font-size: 45px;
     color: #ff0000;
     text-align: center;
-    line-height: 1.9em;
     background-image: url('/assets/valbanner.jpeg');
     background-position: center;
     background-size: cover;
-    height: 80px;
+    height: 100px;
     margin: 0px 0px 30px 0px;
-    padding-top: 10px;
+    padding-top: 30px;
     text-shadow:
-    /* black glow */ 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-        0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
+    /* black glow */ 
+    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
 }
 
 div.eventval,
@@ -45,8 +45,9 @@ div.textval {
     font-size: 40px;
     color: aqua;
     text-shadow:
-    /* black glow */ 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-        0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
+    /* black glow */ 
+    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
 }
 
 div.val-schedule {
@@ -54,7 +55,7 @@ div.val-schedule {
     margin: 30px 0px 30px 0px;
 }
 
-p.Saturday {
+p.Day {
     font-size: 35px;
     margin: 50px 0px 60px 10px;
     text-decoration: underline;
@@ -71,7 +72,31 @@ p.Saturday {
     display: inline-block;
     margin-left: 110px;
     border: 3px solid blue;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.vsecondmatch {
+    display: inline-block;
+    border: 3px solid blue;
+}
+
+.vsecondtime {
+    display: inline-block;
+    margin-left: 110px;
+    border: 3px solid blue;
+    margin-bottom: 40px;
+}
+
+.vthirdmatch {
+    display: inline-block;
+    border: 3px solid blue;
+}
+
+.vthirdtime {
+    display: inline-block;
+    margin-left: 110px;
+    border: 3px solid blue;
+    margin-bottom: 40px;
 }
 
 /* For CSGO */
@@ -79,16 +104,16 @@ h1.title1 {
     font-size: 45px;
     color: #1aff00;
     text-align: center;
-    line-height: 1.9em;
     background-image: url('/assets/csgobanner1.jpeg');
     background-position: 60% 60%;
     background-size: cover;
-    height: 80px;
+    height: 100px;
     margin: 0px 0px 30px 0px;
-    padding-top: 10px;
+    padding-top: 30px;
     text-shadow:
-    /* black glow */ 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-        0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
+    /* black glow */ 
+    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
 }
 
 div.eventcsgo {
@@ -105,17 +130,61 @@ div.eventcsgo {
 
 div.textcsgo {
     position: absolute;
-    top: 50%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -35%);
     background: none;
     border: none;
     font-size: 40px;
     color: rgb(246, 255, 0);
+    
     text-shadow:
-    /* black glow */ 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-        0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
+    /* black glow */
+    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
+    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
 }
 
-p {
+p.Day2 {
+    font-size: 35px;
+    margin: 50px 0px 60px 10px;
+    text-decoration: underline;
+    color: #0099ff;
+    text-align: center;
 }
+
+.csfirstmatch {
+    display: inline-block;
+    border: 3px solid blue;
+}
+
+.csfirsttime {
+    display: inline-block;
+    margin-left: 110px;
+    border: 3px solid blue;
+    margin-bottom: 50px;
+}
+
+.cssecondmatch {
+    display: inline-block;
+    border: 3px solid blue;
+}
+
+.cssecondtime {
+    display: inline-block;
+    margin-left: 110px;
+    border: 3px solid blue;
+    margin-bottom: 50px;
+}
+
+.csthirdmatch {
+    display: inline-block;
+    border: 3px solid blue;
+}
+
+.csthirdtime {
+    display: inline-block;
+    margin-left: 110px;
+    border: 3px solid blue;
+    margin-bottom: 50px;
+}
+

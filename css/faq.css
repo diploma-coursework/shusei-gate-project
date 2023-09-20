@@ -62,10 +62,18 @@ body .innerarticle {
     /* margin-top: 15%; */
 }
 
-#div1:hover {
+.div:hover {
     background-color: rgba(77, 72, 72, 0.253);
     /* background-color: rgba(222, 227, 228, 0.815); */
     transition: background-color 0.5s ease-in-out;
+}
+
+.div {
+    border-radius: 10px;
+}
+
+.answer {
+    text-align: justify;
 }
 
 /* .question:hover + div {

@@ -1,5 +1,4 @@
 
-
 body nav{
     display: flex;
     align-items: flex-start;
@@ -59,6 +58,8 @@ body .innerarticle {
     order: 2;
 } */
 
+
+
 .footer {
     text-align: center;
     padding: 15px;
@@ -69,6 +70,15 @@ body .innerarticle {
     width: 100%;
     /* margin-top: 15%; */
 }
+
+/* .question:hover + div {
+    opacity: 0.4;
+  }
+
+div {
+    transition: opacity 8s ease-in-out;
+    opacity: 0.5;
+} */
 
 /* .your-page-class .specific-element-class {
     background-color: #your-color; */

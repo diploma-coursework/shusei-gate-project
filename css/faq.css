@@ -25,6 +25,7 @@ body .innerarticle {
     padding-left: 80px;
     align-items: stretch;
     display: block;
+    
     /* transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out; */
     /* display: inline-block; */
 }
@@ -38,13 +39,20 @@ body .innerarticle {
     margin-right: 10px;
     flex: 1;
     order: 1;
+    box-shadow: 2px 1px 0px rgba(102, 102, 109, 0.253);
     /* overflow: scroll; */
+}
+
+.answer {
+    margin-left: 80px;
+    margin-right: 40px;
 }
 
 .border {
     border: 2px solid rgba(230, 230, 230, 0.404);
     background-color: rgba(80, 74, 74, 0.404);
     border-radius: 20px;
+    
 }
 
 .hidden {
@@ -60,6 +68,11 @@ body .innerarticle {
     width: 100%; 
     /* display: flex; */
     /* margin-top: 15%; */
+}
+
+.footer a {
+    color: #00fff7;
+    margin: 0 10px;
 }
 
 .title:hover {

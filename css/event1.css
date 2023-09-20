@@ -5,6 +5,7 @@ body {
     background-color: #f0f0f0;
 }
 
+/* For Valorant */
 h1.title {
     font-size: 45px;
     color: #ff0000;
@@ -39,7 +40,7 @@ div.textval {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -35%);
     background: none;
     border: none;
     font-size: 40px;
@@ -51,13 +52,46 @@ div.textval {
     0 0 151px rgb(0, 0, 0);
 }
 
+div.val-schedule {
+    display: block;
+    margin: 30px 0px 30px 0px;
+}
+
+p.Saturday {
+    font-size: 35px;
+    margin: 50px 0px 60px 10px;
+    text-decoration: underline;
+    color: #0099ff;
+    text-align: center;
+}
+
+.vfirstmatch {
+    display: inline-block;
+    border: 3px solid blue;
+}
+
+.vfirsttime {
+    display: inline-block;
+    margin-left: 110px;
+    border: 3px solid blue;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+/* For CSGO */
 h1.title1 {
     font-size: 45px;
-    color: #ff0000;
+    color: #1aff00;
     text-align: center;
     line-height: 1.9em;
-    background-image: url("/assets/");
-    background-position: 55% 60%;
+    background-image: url("/assets/csgobanner1.jpeg");
+    background-position: 60% 60%;
     background-size: cover;
     height: 80px;
     margin: 0px 0px 30px 0px;
@@ -74,9 +108,9 @@ div.eventcsgo {
     text-align: center;
 }
 
-.bordered {
+.bordered1 {
     display: inline-block; /* Ensures that the border fits snugly around the image */
-    border: 7px solid #851111;
+    border: 7px solid #ffdd00;
     padding: 0; /* Remove any default padding or margin */
     border-width: 7px;
 }   
@@ -85,11 +119,11 @@ div.textcsgo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -35%);
     background: none;
     border: none;
     font-size: 40px;
-    color: aqua;
+    color: rgb(246, 255, 0);
     text-shadow:
     /* black glow */ 
     0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
@@ -99,59 +133,8 @@ div.textcsgo {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-h1 {
-    background-color: #262b89;
-    color: #ff00ee;
-    padding: 20px;
-    text-align: center;
+p {
+ 
 }
 
-#schedule {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #e0e0e0;
-    border: 1px solid #ccc;
-}
-
-li:hover {
-    background-color: #f0f0f0;
-}
 

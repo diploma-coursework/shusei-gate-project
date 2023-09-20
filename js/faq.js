@@ -1,5 +1,6 @@
 // Get all question elements
 var questions = document.querySelectorAll('.question');
+var audio = document.getElementById("myAudio");
 
 var questionArray = Array.from(questions);
 // Add click event listeners to each question
@@ -18,8 +19,11 @@ Array.from(questions).forEach(function (question) {
             question.parentElement.classList.remove('border');
         }
     },10);
-    
+    // audio.play().catch(function(error) {
+    //     console.error("Error playing audio: " + error.message);
+    // });
     });
+    question.addEventListener('click', function () {audio.currentTime = 0; audio.play()});
 });
 
 

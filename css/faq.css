@@ -51,24 +51,21 @@ body .innerarticle {
     display: none;
 }
 
-/* nav {
-    flex: auto;
-    align-items: stretch;
-    background-color: pink;
-    order: 2;
-} */
-
-
-
 .footer {
     text-align: center;
     padding: 15px;
     color: #00fff7;
     overflow: hidden;
     position: bottom;
+    width: 100%; 
     /* display: flex; */
-    width: 100%;
     /* margin-top: 15%; */
+}
+
+#div1:hover {
+    background-color: #00fff7;
+    /* background-color: rgba(222, 227, 228, 0.815); */
+    transition: background-color 0.5s ease-in-out;
 }
 
 /* .question:hover + div {

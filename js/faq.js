@@ -18,6 +18,7 @@ Array.from(questions).forEach(function (question) {
             question.parentElement.classList.remove('border');
         }
     },10);
+    
     });
 });
 

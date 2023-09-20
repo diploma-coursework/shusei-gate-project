@@ -63,7 +63,7 @@ body .innerarticle {
 }
 
 #div1:hover {
-    background-color: #00fff7;
+    background-color: rgba(77, 72, 72, 0.253);
     /* background-color: rgba(222, 227, 228, 0.815); */
     transition: background-color 0.5s ease-in-out;
 }

@@ -1,0 +1,55 @@
+
+
+h1{
+    font-family:'Courier New', Courier, monospace;
+    color:whitesmoke;
+    text-align:center;
+}
+
+.tittle h1{
+    animation:glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+    from {
+        text-shadow : 0 0 10px #fff , 0 0 20px #fff ,0 0 30px #e60073, 0 0 40px #e60073,0 0 50px #e60073,0 0 60px #e60073,0 0 #e60073;
+    }
+    to{
+        text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #e60073,0 0 40px #e60073,0 0 50px#e60073,0 0 60px#e60073,0 0 70px#e60073,0 0 80px#e60073;
+    }
+}
+
+.box{
+    background:linear-gradient (to bottom , #ff008f 0%,#ff008f 26% , #000000 26% , #000000 100%);
+    padding:2em;
+    color:black;
+    width:500px;
+    height:500px;
+    border-radius:8px;
+    float:left;
+    position:relative;
+}
+
+.left{
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    width:16em;
+    display:inline-block;
+    float:left;
+}
+
+.right{
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    width:6.5em;
+    float:right;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.barcode{
+    position:relative;
+}

@@ -8,14 +8,20 @@ Array.from(questions).forEach(function (question) {
         // Find the corresponding answer element
         var answer = question.nextElementSibling;
 
+        setTimeout(function() {
         // Toggle the 'hidden' class to show/hide the answer
         if (answer.classList.contains('hidden')) {
             answer.classList.remove('hidden');
+            question.parentElement.classList.add('border');
         } else {
             answer.classList.add('hidden');
+            question.parentElement.classList.remove('border');
         }
+    },10);
     });
 });
+
+
 
 // querySelectorAll accepts Id and name, .name #ID
 // foreach, gives each element a function and loop through array

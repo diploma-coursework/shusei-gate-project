@@ -26,18 +26,26 @@ body .innerarticle {
     padding-left: 80px;
     align-items: stretch;
     display: block;
+    /* transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out; */
+    /* display: inline-block; */
 }
 
-.innerarticle {
+.questions {
     border: 3px solid grey;
     width: 95%;
-    background-color: aqua;
+    background-color: rgba(230, 230, 230, 0.164);
     padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
     flex: 1;
     order: 1;
-    
+    /* overflow: scroll; */
+}
+
+.border {
+    border: 2px solid rgba(230, 230, 230, 0.404);
+    background-color: rgba(230, 230, 230, 0.404);
+    border-radius: 20px;
 }
 
 .hidden {

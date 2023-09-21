@@ -11,8 +11,8 @@ function uploadfile() {
       reader.readAsDataURL(file);
     }
   }
-                        $(function() {
-              $('#profile-image1').on('click', function() {
+                 $(function() {
+                   $('#profile-image1').on('click', function() {
                   $('#profile-image-upload').click();
-              });
-          });
+                  });
+                 });

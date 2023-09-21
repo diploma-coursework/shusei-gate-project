@@ -1,11 +1,15 @@
 
+var div = document.querySelectorAll('.div');
+
 var questions = document.querySelectorAll('.question');
-var audio = document.getElementById("myAudio");
 
 var questionArray = Array.from(questions);
+var divArray = Array.from(div);
 
 Array.from(questions).forEach(function (question) {
-    question.addEventListener('click', function () {
+    var div = question.parentElement;
+
+    div.addEventListener('click', function () {
         
         var answer = question.nextElementSibling;
         

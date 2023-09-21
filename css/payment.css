@@ -2,20 +2,40 @@ h1{
     text-align: center;
     font-size: 70px;
     justify-content:center;
-    align-items:center;
+    color:white;
     font-family:'Times New Roman', Times, serif;
+}
+
+.tittle h1{
+    animation:glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow{
+    from {
+        text-shadow:0 0 20px #fff , 0 0 30px #fff, 0 0 40px #82c9d9,0 0 50px #82c9d9,0 0 60px #82c9d9,0 0 70px #82c9d9,0 0 80px #82c9d9
+    }
+    to{
+        text-shadow:0 0 30px #fff , 0 0 40px #fff,0 0 50px #82c9d9,0 0 60px #82c9d9,0 0 70px #82c9d9,0 0 80px #82c9d9,0 0 90px #82c9d9
+    }
+
 }
 
 .container{
     width:900px;
     height:500px;
-    border-radius:50px;
+    border-radius:70px;
     margin:auto;
+    padding: 0 50px;
     flex-basis:50%;
     justify-content:center;
     align-items: center;
-    background-color:bisque;
+    background-color:transparent;
     display:flex;
+    box-shadow:0 0 50px rgb(230,121,235);
+}
+
+.container.blur{
+    filter:blur(8px);
 }
 
 .container p{
@@ -24,7 +44,7 @@ h1{
 .left{
     flex-basis:50%;
     margin-right:20px;
-    gap:3px;
+    
 }
 .right{
     flex-basis:50%;
@@ -40,12 +60,14 @@ form{
 }
  
 form input[type="text"]{
-    width:150px;
+    width:190px;
+    height:25px;
     padding:0.5 0.7rem;
     margin:0.5rem 0;
     outline:none;
     padding-left: 20px;
     gap:20px;
+    border-radius: 20px;
 }
 
 h3{

@@ -9,7 +9,7 @@ Array.from(questions).forEach(function (question) {
         // Find the corresponding answer element
         var answer = question.nextElementSibling;
 
-        audio.currentTime = 0; audio.play();
+        // audio.currentTime = 0; audio.play();
         
         // Toggle the 'hidden' class to show/hide the answer
         if (answer.classList.contains('hidden')) {

@@ -10,3 +10,7 @@ Array.from(questions).forEach(function (question) {
     });
     
 });
+
+document.getElementById('goback').addEventListener('click', function() {
+    window.history.back();
+  });

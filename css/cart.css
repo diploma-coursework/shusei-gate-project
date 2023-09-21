@@ -1,3 +1,107 @@
-h1 {
-    text-align: center;
+.cart-page-content-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    height: calc(var(--window-height) - 5em);
+    padding-top: 5em;
+
+    & h1.my-shopping-cart-title {
+        text-align: center;
+        margin: 1.2em auto 1.3em;
+        color: var(--cyan);
+    }
+
+    .tickets-wrapper {
+        position: relative;
+        min-height: calc(100% - 13.5em);
+        padding-bottom: 6em;
+
+        .ticket {
+            border: 1px solid var(--gray-2);
+            width: 60%;
+            height: 4em;
+            display: block;
+            margin: 1em auto;
+            border-radius: 0.2em;
+            padding: 0.7em 1em;
+            background: rgba(0, 0, 0, 0.1);
+
+            .top-info {
+                display: flex;
+                justify-content: space-between;
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.6em;
+
+                    .ticket-name {
+                        font-size: 1.2em;
+                        color: white;
+                    }
+                }
+
+                .ticket-price {
+                    color: var(--pink);
+                }
+            }
+
+            .ticket-time {
+                color: var(--gray-1);
+                margin-top: 0.9em;
+            }
+        }
+    }
+
+    .bottom-action-bar {
+        background: rgba(0, 0, 0, 0.4);
+        border-top: 1px solid var(--gray-2);
+        height: 5em;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 18%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        .total-price-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.3em;
+
+            .total {
+                color: var(--gray-1);
+                font-size: 1.2em;
+            }
+
+            .total-price {
+                font-size: 1.4em;
+                color: var(--pink);
+            }
+        }
+
+        .checkout-wrapper {
+            display: flex;
+            gap: 0.4em;
+            align-items: center;
+            cursor: pointer;
+
+            & button {
+                font-size: 1.3em;
+                font-weight: bold;
+                color: white;
+                background: none;
+                border: none;
+                color: var(--pink-dark);
+                cursor: pointer;
+            }
+
+            & img {
+                height: 2.4em;
+            }
+        }
+    }
 }

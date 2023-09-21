@@ -1,5 +1,6 @@
 // Get all question elements
 var questions = document.querySelectorAll('.question');
+var audio = document.getElementById("myAudio");
 
 var questionArray = Array.from(questions);
 // Add click event listeners to each question
@@ -8,14 +9,24 @@ Array.from(questions).forEach(function (question) {
         // Find the corresponding answer element
         var answer = question.nextElementSibling;
 
+        setTimeout(function() {
         // Toggle the 'hidden' class to show/hide the answer
         if (answer.classList.contains('hidden')) {
             answer.classList.remove('hidden');
+            question.parentElement.classList.add('border');
         } else {
             answer.classList.add('hidden');
+            question.parentElement.classList.remove('border');
         }
+    },10);
+    // audio.play().catch(function(error) {
+    //     console.error("Error playing audio: " + error.message);
+    // });
     });
+    question.addEventListener('click', function () {audio.currentTime = 0; audio.play()});
 });
+
+
 
 // querySelectorAll accepts Id and name, .name #ID
 // foreach, gives each element a function and loop through array

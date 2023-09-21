@@ -3,3 +3,7 @@ document.addEventListener('submit', (event) => {
 
     alert("Submitted your feedback, thank you for your support.");
 })
+
+document.getElementById('goback').addEventListener('click', function() {
+    window.history.back();
+  });

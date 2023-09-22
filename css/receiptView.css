@@ -1,7 +1,5 @@
-
-
 h1{
-    font-family:'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color:whitesmoke;
     text-align:center;
 }
@@ -11,17 +9,21 @@ h1{
 }
 @-webkit-keyframes glow{
     from {
-        text-shadow : 0 0 10px #fff , 0 0 20px #fff ,0 0 30px #e60073, 0 0 40px #e60073,0 0 50px #e60073,0 0 60px #e60073,0 0 #e60073;
+        text-shadow : 0 0 10px #fff , 0 0 20px #fff ,0 0 30px #e60073, 0 0 40px #e60073,0 0 50px #e60073,0 0 60px #e60073,0 70 #e60073;
     }
     to{
         text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #e60073,0 0 40px #e60073,0 0 50px#e60073,0 0 60px#e60073,0 0 70px#e60073,0 0 80px#e60073;
     }
 }
-
+.container {
+    width:27em;
+    margin:3em auto;
+    font-family:'Courier New', Courier, monospace;
+}
 .box{
-    background:linear-gradient (to bottom , #ff008f 0%,#ff008f 26% , #000000 26% , #000000 100%);
-    padding:2em;
-    color:black;
+    background:linear-gradient(to bottom ,#ffc7f2 0%,#ffc7f2 22%,#000400 22%,#040404 100%);
+    padding:3em;
+    color:whitesmoke;
     width:500px;
     height:500px;
     border-radius:8px;
@@ -50,6 +52,13 @@ h1{
     align-items:center;
     
 }
-.barcode{
-    position:relative;
+/*#container2{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    position:absolute;
+    right:20px;
 }
+#generator{
+
+}*/

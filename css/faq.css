@@ -94,6 +94,11 @@ body .innerarticle {
     text-align: justify;
 }
 
+.button {
+    border-radius: 10px;
+}
+
+
 /* .question:hover + div {
     opacity: 0.4;
   }

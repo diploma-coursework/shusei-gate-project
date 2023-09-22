@@ -6,6 +6,7 @@ body {
 }
 
 /* For Valorant */
+
 h1.title {
     font-size: 45px;
     color: #ff0000;
@@ -16,14 +17,11 @@ h1.title {
     height: 100px;
     margin: 0px 0px 30px 0px;
     padding-top: 30px;
-    text-shadow:
-    /* black glow */ 
-    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
+    text-shadow: 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0), 0 0 82px rgb(0, 0, 0),
+        0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
 }
 
-div.eventval,
-.eventcsgo {
+div.eventval {
     position: relative;
     text-align: center;
 }
@@ -44,10 +42,8 @@ div.textval {
     border: none;
     font-size: 40px;
     color: aqua;
-    text-shadow:
-    /* black glow */ 
-    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
+    text-shadow: 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0), 0 0 82px rgb(0, 0, 0),
+        0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
 }
 
 div.val-schedule {
@@ -55,51 +51,8 @@ div.val-schedule {
     margin: 30px 0px 30px 0px;
 }
 
-p.Day {
-    font-size: 35px;
-    margin: 50px 0px 60px 10px;
-    text-decoration: underline;
-    color: #0099ff;
-    text-align: center;
-}
-
-.vfirstmatch {
-    display: inline-block;
-    border: 3px solid blue;
-}
-
-.vfirsttime {
-    display: inline-block;
-    margin-left: 110px;
-    border: 3px solid blue;
-    margin-bottom: 40px;
-}
-
-.vsecondmatch {
-    display: inline-block;
-    border: 3px solid blue;
-}
-
-.vsecondtime {
-    display: inline-block;
-    margin-left: 110px;
-    border: 3px solid blue;
-    margin-bottom: 40px;
-}
-
-.vthirdmatch {
-    display: inline-block;
-    border: 3px solid blue;
-}
-
-.vthirdtime {
-    display: inline-block;
-    margin-left: 110px;
-    border: 3px solid blue;
-    margin-bottom: 40px;
-}
-
 /* For CSGO */
+
 h1.title1 {
     font-size: 45px;
     color: #1aff00;
@@ -110,10 +63,8 @@ h1.title1 {
     height: 100px;
     margin: 0px 0px 30px 0px;
     padding-top: 30px;
-    text-shadow:
-    /* black glow */ 
-    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
+    text-shadow: 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0), 0 0 82px rgb(0, 0, 0),
+        0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(255, 255, 255);
 }
 
 div.eventcsgo {
@@ -137,54 +88,156 @@ div.textcsgo {
     border: none;
     font-size: 40px;
     color: rgb(246, 255, 0);
-    
-    text-shadow:
-    /* black glow */
-    0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0),
-    0 0 82px rgb(0, 0, 0), 0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
+    text-shadow: 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0), 0 0 82px rgb(0, 0, 0),
+        0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
 }
 
-p.Day2 {
+/* Days */
+
+p.Day1 {
     font-size: 35px;
-    margin: 50px 0px 60px 10px;
+    margin: 50px 0px 40px 10px;
     text-decoration: underline;
     color: #0099ff;
     text-align: center;
 }
 
-.csfirstmatch {
-    display: inline-block;
-    border: 3px solid blue;
+p.Day2 {
+    font-size: 35px;
+    margin: 50px 0px 40px 10px;
+    text-decoration: underline;
+    color: rgb(242, 0, 255);
+    text-align: center;
 }
 
-.csfirsttime {
+p.Day3 {
+    font-size: 35px;
+    margin: 50px 0px 40px 10px;
+    text-decoration: underline;
+    color: rgb(0, 217, 255);
+    text-align: center;
+}
+
+p.Day4 {
+    font-size: 35px;
+    margin: 50px 0px 40px 10px;
+    text-decoration: underline;
+    color: #0099ff;
+    text-align: center;
+}
+
+p.Day5 {
+    font-size: 35px;
+    margin: 50px 0px 40px 10px;
+    text-decoration: underline;
+    color: rgb(242, 0, 255);
+    text-align: center;
+}
+
+p.Day6 {
+    font-size: 35px;
+    margin: 50px 0px 40px 10px;
+    text-decoration: underline;
+    color: rgb(0, 217, 255);
+    text-align: center;
+}
+
+/* Matches For Valorant and CSGO */
+
+.vfirstmatch {
     display: inline-block;
-    margin-left: 110px;
     border: 3px solid blue;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.vsecondmatch {
+    display: inline-block;
+    border: 3px solid rgb(255, 0, 221);
+    margin-bottom: 30px;
+}
+
+.vthirdmatch {
+    display: inline-block;
+    border: 3px solid rgb(0, 217, 255);
+    margin-bottom: 30px;
+}
+
+.csfirstmatch {
+    display: inline-block;
+    border: 2px solid rgb(255, 0, 0);
+    margin-bottom: 30px;
 }
 
 .cssecondmatch {
     display: inline-block;
-    border: 3px solid blue;
-}
-
-.cssecondtime {
-    display: inline-block;
-    margin-left: 110px;
-    border: 3px solid blue;
-    margin-bottom: 50px;
+    border: 2px solid rgb(229, 255, 0);
+    margin-bottom: 30px;
 }
 
 .csthirdmatch {
     display: inline-block;
+    border: 2px solid rgb(255, 68, 0);
+    margin-bottom: 30px;
+}
+
+/* Time Display for Valorant Matches */
+
+.vfirsttime {
+    display: inline-block;
+    margin-left: 155px;
     border: 3px solid blue;
 }
 
-.csthirdtime {
+.vsecondtime {
     display: inline-block;
-    margin-left: 110px;
-    border: 3px solid blue;
-    margin-bottom: 50px;
+    margin-left: 155px;
+    border: 3px solid rgb(255, 0, 204);
+}
+
+.vthirdtime {
+    display: inline-block;
+    margin-left: 155px;
+    border: 3px solid rgb(0, 217, 255);
+}
+
+/* Add to Cart Button */
+
+.cart {
+    padding: 10px 20px;
+    background-color: #ff5900;
+    color: #fbff00;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-left: 570px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.cart2 {
+    padding: 10px 20px;
+    background-color: #ff5900;
+    color: #fbff00;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* Footer Styles */
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    color: #00fff7;
+    overflow: hidden;
+}
+
+/* Style for footer links */
+.footer a {
+    color: #00fff7;
+    text-decoration: none;
+    margin: 0 10px;
 }
 

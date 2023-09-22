@@ -5,7 +5,7 @@ h2 {
     text-align: center;
 }
 
-/* the div element design */
+/* container div element */
 .container::after,
 .about::after {
     content: '';
@@ -15,12 +15,19 @@ h2 {
 
 .container {
     padding: 0 20px;
+    padding-bottom: 10px;
 }
 
+/* box div element */
 .Box {
     float: left;
     width: 50%;
     min-height: 440px;
+}
+
+.Box2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /*Image*/
@@ -32,6 +39,11 @@ img#ticket {
     align-items: center;
     vertical-align: center;
     margin: 0px auto;
+}
+
+img#ticket {
+    min-width: 50%;
+    min-height: 50%;
 }
 
 /*Footer*/
@@ -49,7 +61,7 @@ div.footeritem {
     left: 0;
     right: 0;
 }
-/* Style for footer links */
+
 .footer a {
     color: #00fff7;
     text-decoration: none;
@@ -119,14 +131,9 @@ button {
     align-items: center;
 }
 
-button.location,
-button.signup {
-    margin: 0px auto;
-    margin-left: 220px;
-}
-
-button.location {
-    margin-top: 15px;
+div.signup {
+    margin-top: 10px;
+    margin-left: 545px;
 }
 
 button:disabled {
@@ -140,17 +147,16 @@ button:disabled {
 .location-wrapper {
     display: flex;
     justify-content: center;
-    width: 100%;
-    padding-top: 4em;
+    width: 50%;
+    padding-top: 10px;
+    min-height: 430px;
 
     & iframe {
         width: 90%;
         height: 18em;
         border-radius: 0.4em;
+        padding-right: 20px;
     }
 }
 
-.back-btn-wrapper {
-    display: block;
-    padding: 3em 5em 1em;
-}
+

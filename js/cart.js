@@ -25,7 +25,6 @@ const ticketWrapperElement = document.querySelector('.tickets-wrapper');
 /**
  * render out tickets in cart to dom
  */
-userInfo.cart = [];
 userInfo.cart.forEach((ticket, index) => {
     const ticketElement = domParser.parseFromString(
         `

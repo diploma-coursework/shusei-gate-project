@@ -1,0 +1,62 @@
+/* Title */
+
+.anime-expo {
+    font-size: 45px;
+    color: #f6ff00;
+    text-align: center;
+    background-image: url('/assets/aniban.webp');
+    background-position: 0% 8%;
+    background-size: cover;
+    height: 100px;
+    margin: 0px 0px 30px 0px;
+    padding-top: 30px;
+    text-shadow: 0 0 7px #000000, 0 0 10px #000000, 0 0 21px #000000, 0 0 42px rgb(0, 0, 0), 0 0 82px rgb(0, 0, 0),
+        0 0 92px rgb(0, 0, 0), 0 0 102px rgb(0, 0, 0), 0 0 151px rgb(0, 0, 0);
+}
+
+/* Display Name of Events and Image */
+
+dt {
+    display: flex;
+    float: right;
+    clear: both;
+    font-size: 25px;
+    color: rgb(0, 255, 217);
+    margin: 40px 100px 10px 0px;
+}
+
+.image1 {
+    display: flex;
+    margin-left: 150px;
+}
+
+/* Add to Cart Button */
+
+.cart {
+    padding: 10px 20px;
+    background-color: #f700ff;
+    color: #ffff00;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-left: 970px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* Footer Styles */
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    color: #00fff7;
+    overflow: hidden;
+}
+
+/* Style for footer links */
+.footer a {
+    color: #00fff7;
+    text-decoration: none;
+    margin: 0 10px;
+}
+

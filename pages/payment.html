@@ -54,7 +54,7 @@
                 
    
                 <div class="right">
-                <h3>Payment Method</h3>
+                <h2>Payment Method</h3>
 
              <form>
                 <label for="number">Credit Card Number :</label>
@@ -74,35 +74,96 @@
                     <option value="2026">2026</option>
                 </select>
 
-                <h3>Online bankings</h3>
+                <h2>Online bankings</h2>
 
                 <input type="radio" name="onlinebanking"/>
                 <label for="tng">Touch N' Go</label>
-                <div>
-                    <img id="img" src="" alt="tng"/>
-                </div>
-                <button type="button" onclick="show()" id="btnID">
-                    Click Here To Scan
-                </button>
+                
+                <img id="myImage" src="/assets/touchngo.jpg" style="display: none;">
+                <button id="showButton">Show Image</button>
                 <script>
-                    function show(){
-                        document.getElementById('img').style.display="block";
-                        document.getElementById('btnID').style.display="none";
-                    }
-                </script><br><br>
+                    var image = document.getElementById("myImage");
+                    var showButton = document.getElementById("showButton");
 
+                    showButton.addEventListener("click", function() {
+                      if (image.style.display === "none") {
+                              image.style.display = "block";
+                      } else {
+                              image.style.display = "none";
+                     }
+                   });
+
+                    image.addEventListener("click", function() {
+                       image.style.display = "none";
+                    });
+                </script><br><br>
+             
                 <input type="radio" name="onlinebanking" name="grab"/>
                 <label for="grab">Grab Pay </label>
 
-                <input type="radio" name="onlinebanking" name="bank"/>
-                <label for="bank">Bank Transfer ( Duit Now) </label><br><br>
+                <img id="myImage" src="/assets/grabpay.jpg" style="display: none;">
+                <button id="showButton">Show Image</button>
 
-                <button class="button button1">SUBMIT</button>
+                <script>
+                    var image = document.getElementById("myImage");
+                    var showButton = document.getElementById("showButton");
+
+                    showButton.addEventListener("click", function() {
+                      if (image.style.display === "none") {
+                              image.style.display = "block";
+                      } else {
+                              image.style.display = "none";
+                     }
+                   });
+
+                    image.addEventListener("click", function() {
+                       image.style.display = "none";
+                    });
+                </script><br><br>
+
                 
-             </form>
-        </div>
-        </div>
+                <input type="radio" name="onlinebanking" name="bank"/>
+                <label for="bank">Bank Transfer ( Duit Now) </label>
 
+                <img id="myImage" src="/assets/duitnowpay.jpg" style="display: none;">
+                <button id="showButton">Show Image</button>
+
+                <script>
+                    var image = document.getElementById("myImage");
+                    var showButton = document.getElementById("showButton");
+
+                    showButton.addEventListener("click", function() {
+                      if (image.style.display === "none") {
+                              image.style.display = "block";
+                      } else {
+                              image.style.display = "none";
+                     }
+                   });
+
+                    image.addEventListener("click", function() {
+                       image.style.display = "none";
+                    });
+                </script><br><br>
+
+              
+                <button class="button button1">SUBMIT</button><br>
+
+            
+             </form><br><br>
+        </div>
+        </div>
+    
+        <footer>
+            <p>SHUSEI is committed to protecting your payment information and only 
+                shares your credit card information with our payment service 
+                providers who agreed to safeguard your information.</p>
+    
+            <p> SHUSEI respects the privacy of users and visitors on our site, and we are committed
+                 to protecting it through maintaining industry-standard physical, technical, and 
+                 administrative measures designed to guard your personal data from unauthorized processing, 
+                 use or disclosure.</p>
+    
+        </footer>
        
     <script src="payment.js"></script>
 </body>

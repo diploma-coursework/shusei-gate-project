@@ -21,6 +21,7 @@ document.cookie.split('; ').forEach((cookie) => {
 const userInfo = await ShuSeiGateAPI.getUserInfo(account_email);
 const domParser = new DOMParser();
 const ticketWrapperElement = document.querySelector('.tickets-wrapper');
+let totalPrice = 0;
 
 /**
  * render out tickets in cart to dom
@@ -47,6 +48,8 @@ userInfo.cart.forEach((ticket, index) => {
     if (userInfo.cart.length - 1 === index) {
         ticketWrapperElement.removeChild(document.querySelector('.ticket.ticket-temp'));
     }
+
+    totalPrice += ticket.quantity * ticket.price;
 });
 
 if (!userInfo.cart.length) {
@@ -55,4 +58,6 @@ if (!userInfo.cart.length) {
         domParser.parseFromString('<h1 style="text-align: center; font-size: 1.3em;">Nothing in cart</h1>', 'text/html')
             .body
     );
+} else {
+    document.querySelector('.bottom-action-bar .total-price').textContent = `RM${totalPrice.toFixed(2)}`;
 }

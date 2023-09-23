@@ -4,3 +4,28 @@
     padding: 2px 5px;
 }
 
+.shusei {
+    color: #00fff7;
+}
+
+.shusei:hover {
+    
+    text-decoration-color: #de73cc;
+    text-decoration: underline;
+    transition: text-decoration 0.8s ease-in-out;
+}
+
+h2 { 
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+h3 {
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+h4 {
+    margin-left: 50px;
+    margin-right: 40px;
+}

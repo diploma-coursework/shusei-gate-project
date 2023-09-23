@@ -102,6 +102,9 @@ div.footer > a:hover {
     font-size: 10px;
 }
 
+.title {
+    color: #00fff7;
+}
 
 /* .question:hover + div {
     opacity: 0.4;

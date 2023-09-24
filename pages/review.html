@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" >
-    <link href="/css/review.css" rel="stylesheet">
-</head>
-<body>
-  
-    <div class="container">
-        
-        <div class="box">
-            <h1>COME AND GIVE US A FEEDBACK</h1>
-            <div class="name">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Name" id="name">
-            </div>
-            <div class="age">
-                <i class="	fas fa-angle-double-right"></i>
-                <input type="text" placeholder="age" id="age">
-            </div>
-            <div class="email">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Email" id="email">
-            </div>
-            <div class="message-box">
-                <textarea id="msg" cols="30" rows="10" placeholder="Message"></textarea>
-            </div>
-            <div class="button">
-                <button id="send" onclick="message()">Send</button>
-            </div>
-            <div class="message">
-                <div class="success" id="success">Your Feedback has been successfully sent!</div>
-                <div class="danger" id="danger">Please check before you submit !</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+        <link href="/css/review.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <h1>COME AND GIVE US A FEEDBACK</h1>
+                <div class="name">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Name" id="name" />
+                </div>
+                <div class="age">
+                    <i class="fas fa-angle-double-right"></i>
+                    <input type="text" placeholder="age" id="age" />
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email" id="email" />
+                </div>
+                <div class="message-box">
+                    <textarea id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <div class="button">
+                    <button id="send" onclick="message()">Send</button>
+                </div>
+                <div class="message">
+                    <div class="success" id="success">Your Feedback has been successfully sent!</div>
+                    <div class="danger" id="danger">Please check before you submit !</div>
+                </div>
             </div>
         </div>
-    </div>
 
-
-    <script src="review.js"></script>
-</body>
+        <script src="/js/review.js"></script>
+    </body>
 </html>

@@ -74,8 +74,35 @@ const addToCartButtonClicked = async (event) => {
             quantity: 1,
             time: '23 December 2023 - 24 December 2023',
         };
+    } else if (classList.contains('mus-1')) {
+        eventDetails = {
+            name: 'Music Live Show Bundle (English)',
+            price: 'RM300',
+            quantity: 1,
+            time: 'Oct30, Nov17, Dec12',
+        };
+    } else if (classList.contains('mus-2')) {
+        eventDetails = {
+            name: 'Music Live Show Bundle (Japanese)',
+            price: 'RM400',
+            quantity: 1,
+            time: 'Jul28, Jan17, Jun12',
+        };
+    } else if (classList.contains('mus-3')) {
+        eventDetails = {
+            name: 'Music Live Show Bundle (Korean)',
+            price: 'RM500',
+            quantity: 1,
+            time: 'Sep30, Nov01, Dec22',
+        };
+    } else if (classList.contains('mus-4')) {
+        eventDetails = {
+            name: 'Music Live Show Bundle (Tamil)',
+            price: 'RM300',
+            quantity: 1,
+            time: 'Feb26, Dec8, May10',
+        };
     }
-    console.log(eventDetails);
 };
 
 document.querySelectorAll('button.add-to-cart').forEach((btn) => btn.addEventListener('click', addToCartButtonClicked));

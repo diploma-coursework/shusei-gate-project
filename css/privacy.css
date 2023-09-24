@@ -6,17 +6,17 @@
 
 .shusei {
     color: #00fff7;
-    text-decoration: none;
-    transition: text-decoration 2s ease;
+    /* text-decoration: none; */
+    transition: text-decoration-color 2s ease;
     font-style: italic;
-    transition: background-size 0.5s;
 }
 
 .shusei:hover {
-    
-    text-decoration-color: #de73cc;
     text-decoration: underline;
-    transition: text-decoration 2s ease;
+    /* text-decoration-color: #de73cc; */
+    /* transition: text-decoration 2s ease; */
+    /* transition: text-decoration-color 2s ease; */
+    /* transition: text-decoration 2s ease; */
 }
 
 h2 { 

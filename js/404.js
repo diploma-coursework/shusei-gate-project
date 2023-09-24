@@ -1,21 +1,17 @@
 
 setTimeout(function() {
     window.location.href = "/";
-}, 50000);
+}, 6000);
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     let countdown = 5;
-//     const timerElement = document.getElementById("timer");
 
-//     function updateTimer() {
-//         timerElement.textContent = countdown;
+let countdownTime = 5;
 
-//         if (countdown === 0) {
-//             window.location.href = "/";
-//         } else {
-//             countdown--;
-//             setTimeout(updateTimer, 1000);
-//         }
-//     }
-//     updateTimer();
-// });
+const countdownTimer = setInterval(function() {
+    if (countdownTime === 0) {
+        clearInterval(countdownTimer);
+        document.getElementById('timer').innerHTML = '0';
+    } else {
+        document.getElementById('timer').innerHTML = countdownTime;
+        countdownTime--;
+    }
+}, 1000);

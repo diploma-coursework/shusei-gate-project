@@ -31,7 +31,7 @@ a:hover {
   }
 
 
-  #p1 span:hover ,#p2 span:hover{
+  #p1 span:hover {
     cursor: pointer;
     display: inline-block;
     color:rgb(255, 255, 255);
@@ -42,7 +42,7 @@ a:hover {
   }
 
 
-  #p1 span:hover ,#p2 span:not(:hover){
+  #p1 span:not(:hover){
     cursor: pointer;
     display: inline-block;
     /* animation: rainbow 1s infinite; */

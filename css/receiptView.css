@@ -3,15 +3,25 @@ h1{
   padding:30px;
   margin-top:0;
   text-align:center;
-
+  animation:glow 1s ease-in-out infinite alternate;
 }
 
+@-webkit-keyframes glow{
+  from{
+    text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff95be, 0 0 40px #ff95be, 0 0 50px #ff95be, 0 0 60px #ff95be, 0 0 70px #ff95be, 0 0 80px #ff95be;
+  }
+}
+ 
 .tittle {
   float:left;
   width:30%;
   padding:0 30px;
   margin-right:20px;
-
+  top:20px;
+  right:20px;
 }
 
 h2{
@@ -31,7 +41,6 @@ h2{
   color:whitesmoke;
   padding:5px;
   margin-left:400px;
-
   align-items: center;
 }
 

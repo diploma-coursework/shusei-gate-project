@@ -15,3 +15,10 @@ const countdownTimer = setInterval(function() {
         countdownTime--;
     }
 }, 1000);
+
+
+const paragraph = document.getElementById('p1');
+paragraph.innerHTML = paragraph.textContent
+  .split(' ')
+  .map(word => `<span>${word}</span>`)
+  .join(' ');

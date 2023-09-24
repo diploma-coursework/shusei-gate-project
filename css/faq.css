@@ -88,6 +88,7 @@ body .innerarticle {
 
 .div {
     border-radius: 10px;
+    padding-bottom: 15px;
 }
 
 .div >*::selection {
@@ -99,10 +100,12 @@ body .innerarticle {
 
 .answer {
     text-align: justify;
+    text-indent: 20px;
 }
 
 .button {
     border-radius: 10px;
+    position: relative;
 }
 
 div.footer > a:hover {

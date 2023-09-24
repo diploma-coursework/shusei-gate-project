@@ -36,7 +36,7 @@ userInfo.cart.forEach((ticket, index) => {
         <div class="ticket-quantity">x${ticket.quantity}</div>
         </div>
         
-        <div class="ticket-price">RM${ticket.price * ticket.quantity}</div>
+        <div class="ticket-price">RM${ticket.price}</div>
         </div>
         <div class="ticket-time">${ticket.time}</div>
         </div>

@@ -103,7 +103,6 @@ const addToCartButtonClicked = async (event) => {
             time: 'Feb26, Dec8, May10',
         };
     }
-    console.log(eventDetails);
 };
 
 document.querySelectorAll('button.add-to-cart').forEach((btn) => btn.addEventListener('click', addToCartButtonClicked));

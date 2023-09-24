@@ -6,13 +6,17 @@
 
 .shusei {
     color: #00fff7;
+    text-decoration: none;
+    transition: text-decoration 2s ease;
+    font-style: italic;
+    transition: background-size 0.5s;
 }
 
 .shusei:hover {
     
     text-decoration-color: #de73cc;
     text-decoration: underline;
-    transition: text-decoration 0.8s ease-in-out;
+    transition: text-decoration 2s ease;
 }
 
 h2 { 
@@ -28,4 +32,8 @@ h3 {
 h4 {
     margin-left: 50px;
     margin-right: 40px;
+}
+
+.contact {
+    color: #00fff7;
 }

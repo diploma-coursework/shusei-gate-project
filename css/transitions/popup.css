@@ -1,0 +1,53 @@
+.container{
+    position:absolute;
+    top:150px;
+    right:400px;
+    width:700px;
+    height:350px;
+    padding:10px;
+    align-items:center;
+    text-align:center;
+    background-color:#d5ffd9;
+    border-radius:40px;
+}
+
+.content p{
+    font-size:20px;
+}
+
+.circle{
+    animation:spin 10s linear infinite;
+}
+
+.tittle img{
+    width:100px;
+    height:100px;
+    margin-top:-50px;
+    border-radius:50%;
+    border:2.5px dashed #4BB543;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.tittle:active .img {
+    animation:spin 5s linear infinite;
+}
+
+
+@keyframes spin{
+    100%{
+        transform:rotateZ(360deg);
+    }
+}
+
+.btn{
+    width:100px;
+    height:50px;
+    padding:5px;
+    border-radius:20px;
+    color:black;
+}
+
+.btn:hover{
+    background-color:#ccfff0;
+    color:white;
+}

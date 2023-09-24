@@ -58,13 +58,13 @@
 
              <form>
                 <label for="number">Credit Card Number :</label>
-                <input type="text" name="" placeholder="Enter card number" required/><br><br>
+                <input type="text" name="" placeholder="Enter card number" /><br><br>
     
                 <label for="month">Exp Month :</label>
-                <input type="text" name="" placeholder="Enter number" required/><br><br>
+                <input type="text" name="" placeholder="Enter number"/><br><br>
     
                 <label for="number">Exp Year:</label>
-                <input type="text" name="" placeholder="Enter card number" required/><br><br>
+                <input type="text" name="" placeholder="Enter card number" /><br><br>
     
                 <label for="number">CVV:</label>
                 <select name="payment" id="type">
@@ -76,78 +76,36 @@
 
                 <h2>Online bankings</h2>
 
-                <input type="radio" name="onlinebanking"/>
+                <input type="radio" name="onlinebanking" id="tng" onclick="showImage('tng')"/>
                 <label for="tng">Touch N' Go</label>
-                
-                <img id="myImage" src="/assets/touchngo.jpg" style="display: none;">
-                <button id="showButton">Show Image</button>
-                <script>
-                    var image = document.getElementById("myImage");
-                    var showButton = document.getElementById("showButton");
 
-                    showButton.addEventListener("click", function() {
-                      if (image.style.display === "none") {
-                              image.style.display = "block";
-                      } else {
-                              image.style.display = "none";
-                     }
-                   });
+                <img id="tngImage" src="/assets/touchngo.jpg" style="display: none;" width="300px" height="200px"><br><br>
 
-                    image.addEventListener("click", function() {
-                       image.style.display = "none";
-                    });
-                </script><br><br>
-             
-                <input type="radio" name="onlinebanking" name="grab"/>
+                <input type="radio" name="onlinebanking" id="grab" onclick="showImage('grab')"/>
                 <label for="grab">Grab Pay </label>
 
-                <img id="myImage" src="/assets/grabpay.jpg" style="display: none;">
-                <button id="showButton">Show Image</button>
+                <img id="grabImage" src="/assets/grab.jpg" style="display: none;" width="300px" height="200px"><br><br>
 
-                <script>
-                    var image = document.getElementById("myImage");
-                    var showButton = document.getElementById("showButton");
 
-                    showButton.addEventListener("click", function() {
-                      if (image.style.display === "none") {
-                              image.style.display = "block";
-                      } else {
-                              image.style.display = "none";
-                     }
-                   });
-
-                    image.addEventListener("click", function() {
-                       image.style.display = "none";
-                    });
-                </script><br><br>
-
-                
-                <input type="radio" name="onlinebanking" name="bank"/>
+                <input type="radio" name="onlinebanking" id="bank" onclick="showImage('bank')"/>
                 <label for="bank">Bank Transfer ( Duit Now) </label>
 
-                <img id="myImage" src="/assets/duitnowpay.jpg" style="display: none;">
-                <button id="showButton">Show Image</button>
+                <img id="bankImage" src="/assets/duitnow.jpg" style="display: none;" width="300px" height="200px"><br><br>
 
+                <button class="button button1" class="btn" onClick="openPopup()">SUBMIT</button>
+
+               
                 <script>
-                    var image = document.getElementById("myImage");
-                    var showButton = document.getElementById("showButton");
+                   function showImage(imageId) {
+                   var image = document.getElementById(imageId + "Image");
 
-                    showButton.addEventListener("click", function() {
-                      if (image.style.display === "none") {
-                              image.style.display = "block";
-                      } else {
-                              image.style.display = "none";
-                     }
-                   });
-
-                    image.addEventListener("click", function() {
-                       image.style.display = "none";
-                    });
-                </script><br><br>
-
-              
-                <button class="button button1">SUBMIT</button><br>
-
+                     if (image.style.display === "none") {
+                            image.style.display = "block";
+                    } else {
+                         image.style.display = "none";
+                       }
+                    }
+                </script>
             
              </form><br><br>
         </div>
@@ -162,9 +120,11 @@
                  to protecting it through maintaining industry-standard physical, technical, and 
                  administrative measures designed to guard your personal data from unauthorized processing, 
                  use or disclosure.</p>
-    
         </footer>
-       
+
+    <script src="payment.js"></script>
+
     <script type="module" src="/js/payment.js"></script>
+
 </body>
    

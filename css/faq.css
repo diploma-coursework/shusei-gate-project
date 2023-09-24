@@ -147,18 +147,15 @@ div.footer > a:hover {
     box-shadow: 0.5px 0.5px 10px 2px whitesmoke;
     border-color: white;
     transition: background-color 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out, color 0.2s ease-out, box-shadow 0.2s ease-out;
-    /* transition: width 5.8s ease-in-out;
-    transition: height 5.8s ease-in-out;
-    transition: color 5.8s ease-in-out;
-    transition: box-shadow 5.8s ease-in-out; */
 }
 
 .button:hover {
     border: none;
 }
 
-
-
+a {
+    color: #00fff7;
+}
 /* .question:hover + div {
     opacity: 0.4;
   }

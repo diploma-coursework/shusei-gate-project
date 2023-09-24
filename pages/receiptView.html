@@ -6,7 +6,9 @@
 </head>
 <body>
 <div class="container"> 
+    
     <div class="box boxleft"> 
+
         <h1>Shusei Gate</h1> 
         <div class="tittle"> 
             <h2>BARBIE </h2> 
@@ -56,5 +58,32 @@
                </script> 
             </div> 
         </div> 
+
+        <script>
+            const ticketElm = document.getElementById("ticket");
+const { x, y, width, height } = ticketElm.getBoundingClientRect();
+const centerPoint = {
+  x: x + width / 2,
+  y: y + height / 2,
+};
+
+
+
+window.addEventListener("mousemove", (e) => {
+    const degreeX = (e.clientY - centerPoint.y) * 0.008;
+    const degreeY = (e.clientX - centerPoint.x) * -0.008;
+
+    ticketElm.style.transform = `
+        perspective(1000px)
+        rotateX(${degreeX}deg)
+        rotateY(${degreeY}deg)
+    `;
+});
+
+        </script>
+
+        <script>
+            <button onclick="window.print()">Print</button>
+        </script>
 </div> 
 </body>

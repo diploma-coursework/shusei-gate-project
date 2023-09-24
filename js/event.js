@@ -129,8 +129,11 @@ const addToCartButtonClicked = async (event) => {
     }
     alert(addToCartMsg);
 
-    if (confirm('Do you want to go to cart?')) window.location.hash = 'cart';
-    event.target.disabled = false;
+    if (confirm('Do you want to go to cart?')) {
+        window.location.hash = 'cart';
+    } else {
+        window.location.reload();
+    }
 };
 
 document.querySelectorAll('button.add-to-cart').forEach((btn) => btn.addEventListener('click', addToCartButtonClicked));

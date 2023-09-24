@@ -58,3 +58,6 @@ h2 {
     font-size: 18px;
 }
 
+.cart:disabled {
+    filter: brightness(50%);
+}

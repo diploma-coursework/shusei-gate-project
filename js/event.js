@@ -13,6 +13,7 @@ document.cookie.split('; ').forEach((cookie) => {
 });
 
 const addToCartButtonClicked = async (event) => {
+    event.target.disabled = true;
     const classList = event.target.classList;
     let eventDetails = {};
 
@@ -114,13 +115,22 @@ const addToCartButtonClicked = async (event) => {
             quantity: 1,
             time: 'Feb26, Dec8, May10',
         };
-    } else return;
+    } else {
+        event.target.disabled = false;
+        alert('Something went wrong.');
+        return;
+    }
 
     const addToCartMsg = await ShuSeiGateAPI.userAddToCart(account_email, eventDetails);
-    if (!addToCartMsg) return alert('Something went wrong.');
+    if (!addToCartMsg) {
+        alert('Something went wrong.');
+        event.target.disabled = false;
+        return;
+    }
     alert(addToCartMsg);
 
     if (confirm('Do you want to go to cart?')) window.location.hash = 'cart';
+    event.target.disabled = false;
 };
 
 document.querySelectorAll('button.add-to-cart').forEach((btn) => btn.addEventListener('click', addToCartButtonClicked));

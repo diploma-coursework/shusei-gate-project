@@ -43,6 +43,10 @@ dt {
     font-size: 17px;
 }
 
+.cart:disabled {
+    filter: brightness(50%);
+}
+
 /* Footer Styles */
 
 .footer {
@@ -59,4 +63,3 @@ dt {
     text-decoration: none;
     margin: 0 10px;
 }
-

@@ -50,7 +50,7 @@ h1.title1 {
     font-size: 45px;
     color: #1aff00;
     text-align: center;
-    background-image: url('/assets/csgobanner1.jpeg');
+    background-image: url('/assets/csgobanner.jpeg');
     background-position: 60% 60%;
     background-size: cover;
     height: 100px;
@@ -76,7 +76,7 @@ div.textcsgo {
     position: absolute;
     top: 18%;
     left: 50%;
-    transform: translate(-50%, -35%);
+    transform: translate(-50%, -55%);
     background: none;
     border: none;
     font-size: 40px;
@@ -210,17 +210,6 @@ p.Day6 {
     filter: brightness(50%);
 }
 
-.cart2 {
-    padding: 10px 20px;
-    background-color: #ff5900;
-    color: #fbff00;
-    border-color: rgb(255, 255, 255);
-    border-radius: 100px;
-    margin-right: 15px;
-    cursor: pointer;
-    font-size: 17px;
-}
-
 /* Footer Styles */
 
 .footer {
@@ -237,3 +226,4 @@ p.Day6 {
     text-decoration: none;
     margin: 0 10px;
 }
+

@@ -61,3 +61,20 @@ h2 {
 .cart:disabled {
     filter: brightness(50%);
 }
+
+/* Footer Styles */
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    color: #00fff7;
+    overflow: hidden;
+}
+
+/* Style for footer links */
+.footer a {
+    color: #00fff7;
+    text-decoration: none;
+    margin: 0 10px;
+}

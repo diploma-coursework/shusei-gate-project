@@ -1,0 +1,42 @@
+
+
+h1 {
+    color: #00fff7;
+    font-style: italic;
+}
+
+h2 { 
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+p {
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+ul.custom {
+    list-style-image: url('/assets/Suisei_Comet_Emote.png');
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+li {
+    font-size: 19px;
+}
+
+.contact {
+    color: #00fff7;
+}
+
+.bigger {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+span {
+    color: #00fff7;
+    font-style: italic;
+}

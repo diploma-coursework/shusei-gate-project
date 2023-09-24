@@ -56,11 +56,11 @@ h1{
     margin-right:20px;
 }
 form{
-    padding:1 rem;
+    padding:1 px;
 }
  
 form input[type="text"]{
-    width:190px;
+    width:220px;
     height:25px;
     padding:0.5 0.7rem;
     margin:0.5rem 0;
@@ -68,6 +68,10 @@ form input[type="text"]{
     padding-left: 20px;
     gap:20px;
     border-radius: 20px;
+}
+
+.right form input[input="text"]{
+    width:180px;
 }
 
 h3{
@@ -81,16 +85,20 @@ footer{
     color:white;
     margin:10px 0;
     height:2px;
-
+    top:10p0x;
+    border-top:solid ;
 }
-
 
 .button1{
     background-color:transparent;
     color:whitesmoke;
-    border:2px transparent;
+    border-radius:20px;
+    border-style: none;
     padding:15px;
     box-shadow: 0 0 30px 10px #feaee7 ;
+    position:absolute;
+    top:680px;
+    right:250px;
 }
 
 .button1:hover{
@@ -100,8 +108,4 @@ footer{
 
 .radio-container{
     margin-bottom:10px;
-}
-
-.button1{
-    
 }

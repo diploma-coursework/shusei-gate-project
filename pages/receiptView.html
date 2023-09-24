@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <head>
-    <link href="/css/receiptView.css" rel="stylesheet">
+    <link href="/css/receiptView.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-<div class="container"> 
-    <div class="box boxleft"> 
-        <h1>Shusei Gate</h1> 
-        <div class="tittle"> 
-            <h2>BARBIE </h2> 
-            <span>movie</span> 
-        </div> 
+    <div class="container">
+        <div class="box boxleft">
+            <h1>Shusei Gate</h1>
+            <div class="tittle">
+                <h2>BARBIE</h2>
+                <span>movie</span>
+            </div>
 
-        <div class="venue"> 
-            <h2>Queensbay Mall</h2> 
-            <span>LOCATION</span> 
-        </div> 
+            <div class="venue">
+                <h2>Queensbay Mall</h2>
+                <span>LOCATION</span>
+            </div>
 
-        <div class="seat"> 
-            <h2>HALL 1</h2> 
-            <span>SEAT</span> 
-        </div> 
+            <div class="seat">
+                <h2>HALL 1</h2>
+                <span>SEAT</span>
+            </div>
 
-        <div class="time"> 
-            <h2>1:54 AM</h2> 
-            <span>TIME</span> 
-        </div> 
+            <div class="time">
+                <h2>1:54 AM</h2>
+                <span>TIME</span>
+            </div>
 
-        <div class="date"> 
-            <h2>23 SEPTEMBER 2023</h2> 
-            <span>DATE</span> 
-        </div> 
-    </div> 
-        <div class="box boxright"> 
-            <div class="barcode"> 
-                <p>Enter your text or URL</p> 
-                <input type="text" placeholder="ONLY CODE" id="qrText"> 
-     
-                <div id="generator"> 
-                    <img src="" id="qrImage"> 
-                </div> 
-     
-            <button onclick="generateQR()">Generate QR Code</button> 
-            <script src="receiptView.js"></script> 
-     
-               <script> 
-                let imgBox = document.getElementById("imgBox"); 
-                let qrImage = document.getElementById("qrImage"); 
-                let qrText = document.getElementById("qrText"); 
-     
-                function generateQR(){ 
-                    qrImage.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value; 
-                } 
-               </script> 
-            </div> 
-        </div> 
-</div> 
+            <div class="date">
+                <h2>23 SEPTEMBER 2023</h2>
+                <span>DATE</span>
+            </div>
+        </div>
+        <div class="box boxright">
+            <div class="barcode">
+                <p>Enter your text or URL</p>
+                <input type="text" placeholder="ONLY CODE" id="qrText" />
+
+                <div id="generator">
+                    <img src="" id="qrImage" />
+                </div>
+
+                <button onclick="generateQR()">Generate QR Code</button>
+                <script src="receiptView.js"></script>
+
+                <script>
+                    let imgBox = document.getElementById('imgBox');
+                    let qrImage = document.getElementById('qrImage');
+                    let qrText = document.getElementById('qrText');
+
+                    function generateQR() {
+                        qrImage.src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=' + qrText.value;
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="go-to-my-tickets">
+        <route-to href="#my-tickets">
+            <button>Go to My Tickets</button>
+        </route-to>
+    </div>
 </body>

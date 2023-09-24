@@ -1,112 +1,133 @@
-h1{
-  font-size:30px;
-  padding:30px;
-  margin-top:0;
-  text-align:center;
-  animation:glow 1s ease-in-out infinite alternate;
+h1 {
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 0;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow{
-  from{
-    text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff95be, 0 0 40px #ff95be, 0 0 50px #ff95be, 0 0 60px #ff95be, 0 0 70px #ff95be, 0 0 80px #ff95be;
-  }
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073,
+            0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff95be, 0 0 40px #ff95be, 0 0 50px #ff95be, 0 0 60px #ff95be,
+            0 0 70px #ff95be, 0 0 80px #ff95be;
+    }
 }
- 
+
 .tittle {
-  float:left;
-  width:30%;
-  padding:0 30px;
-  margin-right:20px;
-  top:20px;
-  right:20px;
+    float: left;
+    width: 30%;
+    padding: 0 30px;
+    margin-right: 20px;
+    top: 20px;
+    right: 20px;
 }
 
-h2{
-  font-size:20px;
+h2 {
+    font-size: 20px;
 }
-.barcode{
-  color:whitesmoke;
-  position:absolute;
-  top:100px;
-  right:0px;
-  width:150px;
-  height:20px;
-
+.barcode {
+    color: whitesmoke;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 150px;
+    height: 20px;
 }
-.container{
-  font-family: Arial, Helvetica, sans-serif;
-  color:whitesmoke;
-  padding:5px;
-  margin-left:400px;
-  align-items: center;
-}
-
-.box{
-  width:500px;
-  height:350px;
-  border-radius:30px;
-  float:left;
-  padding:10px;
-  position:relative;
-  background:linear-gradient(to bottom ,#ffc7f2 0%,#ffc7f2 26%,#000400 26%,#040404 100%);
-  margin-top:200px;
-  justify-content: center;
-  align-items: center;
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    padding: 5px;
+    margin-left: 400px;
+    align-items: center;
 }
 
-.boxLeft{
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+.box {
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    float: left;
+    padding: 10px;
+    position: relative;
+    background: linear-gradient(to bottom, #ffc7f2 0%, #ffc7f2 26%, #000400 26%, #040404 100%);
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
 }
 
-input[type="text"]{
-  width:120px;
-}
-.boxright{
-  width:10em;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-left:5px dashed ;
-  position:relative;
-  &:before,
-  &:after{
-    content:"";
-    position:absolute;
-    display:block;
-    width:3.0em;
-    height:3.0em;
-    background:#fff;
-    border-radius:50%;
-    left:-1.6em;
-  }
-  &:before{
-    top:-.4em;
-  }
-  &:after{
-    bottom:-.4em;
-  }
+.boxLeft {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
-.time{
-  float:left;
-  clear:left;
-  padding:0 30px;
+input[type='text'] {
+    width: 120px;
+}
+.boxright {
+    width: 10em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 5px dashed;
+    position: relative;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 3em;
+        height: 3em;
+        background: #fff;
+        border-radius: 50%;
+        left: -1.6em;
+    }
+    &:before {
+        top: -0.4em;
+    }
+    &:after {
+        bottom: -0.4em;
+    }
 }
 
-.date{
-  margin:0 0 0em 5em;
-  
+.time {
+    float: left;
+    clear: left;
+    padding: 0 30px;
 }
 
-.seat{
-  padding:0 30px;
+.date {
+    margin: 0 0 0em 5em;
 }
 
-.location{
-  width:50%;
-  float:left;
-  padding:0 20px 0 20px;
+.seat {
+    padding: 0 30px;
+}
+
+.location {
+    width: 50%;
+    float: left;
+    padding: 0 20px 0 20px;
+}
+
+.go-to-my-tickets {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+}
+
+.go-to-my-tickets button {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    background: var(--cyan);
+    padding: 0.6em;
+    border: 1px solid var(--gray-0);
+    border-radius: 0.2em;
 }

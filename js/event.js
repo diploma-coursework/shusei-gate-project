@@ -1,108 +1,136 @@
 import ShuSeiGateAPI from '/lib/publicAPI/ShuSeiGateAPI.js';
 
+/**
+ * get user's data
+ */
+let account_email;
+document.cookie.split('; ').forEach((cookie) => {
+    if (cookie.startsWith('session=')) {
+        // email
+        account_email = cookie.split('=')[1];
+        return;
+    }
+});
+
 const addToCartButtonClicked = async (event) => {
+    event.target.disabled = true;
     const classList = event.target.classList;
     let eventDetails = {};
 
     if (classList.contains('val-1')) {
         eventDetails = {
             name: 'Valorant (Go!Gaming vs TL)',
-            price: 'RM60',
+            price: 60,
             quantity: 1,
             time: '11PM - Saturday, 26 August 2023',
         };
     } else if (classList.contains('val-2')) {
         eventDetails = {
             name: 'Valorant (FUT vs DRX)',
-            price: 'RM60',
+            price: 60,
             quantity: 1,
             time: '8AM - Sunday, 24 September 2023',
         };
     } else if (classList.contains('val-3')) {
         eventDetails = {
             name: 'Valorant (EDG vs T1)',
-            price: 'RM60',
+            price: 60,
             quantity: 1,
             time: '5AM - Sunday, 22 October 2023',
         };
     } else if (classList.contains('cs-1')) {
         eventDetails = {
             name: 'Counter Strike (FUR vs Team Spirit)',
-            price: 'RM50',
+            price: 50,
             quantity: 1,
             time: '7:55AM - Saturday, 26 August 2023',
         };
     } else if (classList.contains('cs-2')) {
         eventDetails = {
             name: 'Counter Strike (NAVI vs C9)',
-            price: 'RM50',
+            price: 50,
             quantity: 1,
             time: '6:35AM - Sunday, 24 September 2023',
         };
     } else if (classList.contains('cs-3')) {
         eventDetails = {
             name: 'Counter Strike (Heroic vs FNC)',
-            price: 'RM50',
+            price: 50,
             quantity: 1,
             time: '9:10AM - Sunday, 22 October 2023',
         };
     } else if (classList.contains('ani-1')) {
         eventDetails = {
             name: 'ANIME MATSURI 2023',
-            price: 'RM80',
+            price: 80,
             quantity: 1,
             time: '28 September 2023 - 30 September 2023',
         };
     } else if (classList.contains('ani-2')) {
         eventDetails = {
             name: 'COSWORLD MALAYSIA',
-            price: 'RM40',
+            price: 40,
             quantity: 1,
             time: '6 October 2023 - 8 October 2023',
         };
     } else if (classList.contains('ani-3')) {
         eventDetails = {
             name: 'ANIME FESTIVAL ASIA',
-            price: 'RM50',
+            price: 50,
             quantity: 1,
             time: '24 November 2023 - 26 November 2023',
         };
     } else if (classList.contains('ani-4')) {
         eventDetails = {
             name: 'COMIC FIESTA 2023',
-            price: 'RM120',
+            price: 120,
             quantity: 1,
             time: '23 December 2023 - 24 December 2023',
         };
     } else if (classList.contains('mus-1')) {
         eventDetails = {
             name: 'Music Live Show Bundle (English)',
-            price: 'RM300',
+            price: 300,
             quantity: 1,
             time: 'Oct30, Nov17, Dec12',
         };
     } else if (classList.contains('mus-2')) {
         eventDetails = {
             name: 'Music Live Show Bundle (Japanese)',
-            price: 'RM400',
+            price: 400,
             quantity: 1,
             time: 'Jul28, Jan17, Jun12',
         };
     } else if (classList.contains('mus-3')) {
         eventDetails = {
             name: 'Music Live Show Bundle (Korean)',
-            price: 'RM500',
+            price: 500,
             quantity: 1,
             time: 'Sep30, Nov01, Dec22',
         };
     } else if (classList.contains('mus-4')) {
         eventDetails = {
             name: 'Music Live Show Bundle (Tamil)',
-            price: 'RM300',
+            price: 300,
             quantity: 1,
             time: 'Feb26, Dec8, May10',
         };
+    } else {
+        event.target.disabled = false;
+        alert('Something went wrong.');
+        return;
     }
+
+    const addToCartMsg = await ShuSeiGateAPI.userAddToCart(account_email, eventDetails);
+    if (!addToCartMsg) {
+        alert('Something went wrong.');
+        event.target.disabled = false;
+        return;
+    }
+    alert(addToCartMsg);
+
+    if (confirm('Do you want to go to cart?')) window.location.hash = 'cart';
+    event.target.disabled = false;
 };
 
 document.querySelectorAll('button.add-to-cart').forEach((btn) => btn.addEventListener('click', addToCartButtonClicked));

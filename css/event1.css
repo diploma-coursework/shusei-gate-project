@@ -206,6 +206,10 @@ p.Day6 {
     font-size: 17px;
 }
 
+.cart:disabled {
+    filter: brightness(50%);
+}
+
 .cart2 {
     padding: 10px 20px;
     background-color: #ff5900;
@@ -233,4 +237,3 @@ p.Day6 {
     text-decoration: none;
     margin: 0 10px;
 }
-

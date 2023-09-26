@@ -84,3 +84,7 @@ span {
     background-color:rgb(87, 157, 248);
     color:rgba(250, 255, 250, 0.952); 
 }
+
+.title {
+    font-size: 30px;
+}
